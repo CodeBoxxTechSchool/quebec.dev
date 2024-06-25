@@ -1,0 +1,894 @@
+---
+fr:
+  about:
+    show:
+      caption: Vincent & Charlton, fondateurs de
+      description: Nous sommes Tampa Devs, la communauté de développeurs de Tampa Bay. Nous construisons Tampa Devs Talent pour faciliter la recherche de la prochaine opportunité pour les développeurs de Tampa Bay tout en soutenant notre mission caritative.
+      readtime: 1 minute de lecture
+      title: À propos
+      title_og: À propos de Tampa Devs Talent
+  activerecord:
+    attributes:
+      business:
+        company: Nom de l'entreprise
+        contact_name: Votre nom
+        contact_role: Votre titre ou rôle
+        name: Votre nom
+        phone_number: Votre numéro de téléphone
+      developer:
+        email: E-mail
+        github: Github
+        hero: Héros
+        linkedin: Linkedin
+        name: Nom
+        recently_added: Nouveaux profils
+        scheduling_link: Lien de planification
+        source_contributor: Contributeurs de source
+        twitter: Twitter
+        website: Site web
+      location:
+        country_code: Pays
+      role_level:
+        c_level: Niveau C
+        junior: Junior
+        mid: Niveau intermédiaire
+        principal: Principal / staff
+        senior: Sénior
+      role_type:
+        full_time_contract: Contrat à temps plein
+        full_time_employment: Emploi à temps plein
+        part_time_contract: Contrat à temps partiel
+      user:
+        email: E-mail
+        password: Mot de passe
+        password_confirmation: Confirmation du mot de passe
+        remember_me: Se souvenir de moi
+    errors:
+      models:
+        developer:
+          attributes:
+            specialties:
+              too_long: est limité à 5
+        location:
+          invalid_coordinates: ne peuvent pas être trouvées
+    models:
+      business:
+        one: Entreprise
+        other: Entreprises
+      developer:
+        one: Développeur
+        other: Développeurs
+      user:
+        one: Utilisateur
+        other: Utilisateurs
+  admin:
+    businesses:
+      hiring_invoice_requests:
+        index:
+          actions: Actions
+          business: Entreprise
+          details: Détails
+          developer: Développeur
+          employment_type: Type d'emploi
+          start_date: Date de début
+          title: Demandes de facturation de recrutement
+        show:
+          billing_address: Adresse de facturation
+          developer_name: Nom du développeur
+          employment_type: Type d'emploi
+          feedback: Retour d'information
+          full_name: Nom complet
+          position: Position
+          salary: Salaire
+          start_date: Date de début
+          title: Demande de facturation de recrutement
+      invisiblizes:
+        create:
+          created: Profil défini comme invisible.
+          destroyed: Profil défini comme visible.
+    conversations:
+      blocks:
+        index:
+          blocked: Bloqué
+          no_blocked_conversations: Aucune conversation bloquée
+          title: Conversations bloquées
+      index:
+        business: Entreprise
+        conversations: "Conversations de"
+        developer: Développeur
+        email: E-mail
+        email_tooltip: Le développeur a mentionné une adresse e-mail dans une réponse.
+        no_potential_email: Aucun e-mail potentiel
+        no_response: Pas de réponse
+        potential_email: E-mail potentiel
+        replied: Répondu
+        replied_tooltip: Le développeur a répondu à cette conversation.
+        reply_rate: Taux de réponse
+        started: Commencé
+        title: Conversations
+        view: Voir
+    developers:
+      celebration_package_requests:
+        index:
+          actions: Actions
+          company: Entreprise
+          details: Détails
+          developer: Développeur
+          employment_type: Type d'emploi
+          start_date: Date de début
+          title: Demandes de colis de célébration
+        show:
+          company_name: Nom de l'entreprise
+          employment_type: Type d'emploi
+          feedback: Retour d'information
+          mailing_address: Adresse postale
+          position: Position
+          start_date: Date de début
+          title: Demande de colis de célébration
+      invisiblizes:
+        create:
+          created: Profil défini comme invisible.
+          destroyed: Profil défini comme visible.
+    features:
+      create:
+        created: Profil mis en avant pour une semaine.
+    hiring_agreements:
+      terms:
+        create:
+          created: Conditions de l'accord de recrutement ajoutées.
+        edit:
+          activate: Activer
+          active: Actif
+          cancel: Annuler
+          deactivate: Désactiver
+          title: Accord de recrutement
+        index:
+          active: Actif
+          new: Nouveaux termes
+          title: Conditions de l'accord de recrutement
+        new:
+          cancel: Annuler
+          title: Accord de recrutement
+        show:
+          body: Corps
+          edit: Modifier
+          title: Accord de recrutement
+        update:
+          updated: Conditions de l'accord de recrutement mises à jour.
+    referrals:
+      index:
+        code: Code de parrainage
+        referrals_count: Parrainages
+        title: Parrainages
+        user: Utilisateur
+        view: Voir
+    specialties:
+      create:
+        created: Spécialité de développeur créée.
+      edit:
+        title: Modifier la spécialité du développeur
+      form:
+        cancel: Annuler
+      index:
+        actions: Actions
+        add: Ajouter une spécialité
+        delete: Supprimer
+        delete_confirmation: Êtes-vous sûr de vouloir supprimer cette spécialité ?
+        developers: Développeurs
+        edit: Modifier
+        name: Nom
+        title: Spécialités des développeurs
+      new:
+        title: Nouvelle spécialité de développeur
+      show:
+        developer_specialty: Spécialité du développeur
+        no_developers: Aucun développeur avec cette spécialité.
+      update:
+        updated: Spécialité du développeur mise à jour.
+    transactions:
+      create:
+        created: Transaction créée
+      destroy:
+        destroyed: Transaction supprimée
+      form:
+        URL: URL
+        cancel: Annuler
+        description: Les dépenses sont des services et produits payés tandis que les contributions sont des dons et des parrainages.
+        title: Nouvelle dépense ou contribution
+      index:
+        delete_confirmation: Êtes-vous sûr de vouloir supprimer cette transaction ?
+        title: Dépenses et contributions
+      update:
+        updated: Transaction mise à jour
+    users:
+      index:
+        business: Entreprise
+        developer: Développeur
+        email: E-mail
+        impersonate: Usurper
+        title: Utilisateurs
+      referrals:
+        index:
+          business: Entreprise
+          developer: Développeur
+          referrals: "Parrainages de"
+          referrals_count: Parrainages
+          referred_user: Utilisateur parrainé
+      search:
+        cta: Rechercher
+        help: Filtrer les utilisateurs par nom, entreprise ou e-mail
+  affiliates:
+    registrations:
+      create:
+        notice: Votre demande sera approuvée sous peu. Soyez à l'affût d'un e-mail de notre équipe bientôt.
+      index:
+        description: Gagnez des commissions récurrentes de 5 % pour chaque parrainage à Tampa Devs Talent. Rejoignez le programme d'affiliation aujourd'hui et commencez à gagner de l'argent tout en promouvant la seule plateforme de recrutement à but non lucratif qui soutient les communautés de développeurs à Tampa Bay.
+        title: Gagnez de l'argent en promouvant Tampa Devs Talent
+      new:
+        agreement: J'accepte ces règles
+        submit: S'inscrire
+        submitting: Inscription en cours...
+        subtitle: Règles du programme
+        title: Inscription au programme d'affiliation Tampa Devs Talent
+  blocks:
+    create:
+      notice: "%{other_recipient} a été bloqué."
+    new:
+      block: Bloquer
+      cancel: Annuler
+      message: Êtes-vous sûr de vouloir signaler cette conversation et bloquer l'expéditeur ? Cela masquera la conversation et il ne pourra plus vous contacter.
+      title: Bloquer l'expéditeur
+  bootcamps:
+    show:
+      caption: " a formé des développeurs depuis 2018."
+      cta: En savoir plus
+      description: CodeBoxx Academy est le partenaire bootcamp officiel de Tampa Devs Talent.
+      title: Bootcamps de codage
+      title_og: Bootcamps de codage
+  business_mailer:
+    cancel_subscription:
+      subject: Confirmation d'annulation de Tampa Devs Talent
+    subscribed:
+      subject: "Votre abonnement Tampa Devs Talent est en ligne ! 🎉 Trouvez votre match parfait."
+    welcome:
+      subject: "Bienvenue à Tampa Devs Talent 👋"
+  businesses:
+    admin_component:
+      confirm_make_invisible: Êtes-vous sûr de vouloir rendre cette entreprise invisible ?
+      confirm_make_visible: Êtes-vous sûr de vouloir rendre cette entreprise visible ?
+      conversations: Conversations
+      invisiblize: Invisibiliser
+      make_visible: Visibiliser
+      title: Admin
+    create:
+      can_continue: Tout est prêt ! Vous pouvez maintenant continuer à configurer votre abonnement.
+      updated: Les informations de votre entreprise ont été mises à jour.
+    edit:
+      title: Profil de votre entreprise
+    expired_subscription_component:
+      cta: Mettez à jour votre compte pour envoyer des messages aux développeurs
+      title: Votre abonnement a expiré.
+    form:
+      avatar: Le logo de votre entreprise
+      business:
+        help: Informations sur votre entreprise. Voici votre chance de vous vendre aux candidats potentiels !
+        title: Détails de l'entreprise
+      change_avatar: Télécharger
+      creating: Création en cours...
+      developer_notifications:
+        help_text: Recevez des notifications par e-mail quotidiennes ou hebdomadaires lorsque de nouveaux développeurs ajoutent leur profil à Tampa Devs Talent.
+        legend: Notifications des développeurs
+        values:
+          daily: Quotidien
+          'no': Jamais
+          weekly: Hebdomadaire
+      loading: Chargement...
+      notifications:
+        title: Notifications par e-mail
+      personal:
+        help: Informations sur vous, le point de contact pour votre entreprise sur Tampa Devs Talent.
+        title: Détails personnels
+      something_went_wrong: Une erreur est survenue lors du téléchargement de votre image, veuillez réessayer.
+      survey_request_notifications:
+        help_text: Aidez Tampa Devs Talent en recevant des enquêtes courtes et peu fréquentes sur l'utilisation de la plateforme.
+        legend: Demandes de sondage
+      updating: Mise à jour en cours...
+      your_business_profile: Profil de votre entreprise
+    hiring_fee_component:
+      cta: Payer les frais de recrutement
+      title: Avez-vous embauché %{developer}?
+    hiring_invoice_requests:
+      create:
+        success: Merci ! Notre équipe vous contactera bientôt.
+      new:
+        billing_address: Adresse de facturation
+        description: Félicitations pour votre nouvelle embauche !
+        developer_name: Nom du développeur
+        feedback: Retour d'information (facultatif)
+        feedback_help: Faites-nous savoir comment nous pouvons améliorer Tampa Devs Talent ou tout ce que vous souhaitez partager.
+        requesting: Demande en cours...
+        submit: Soumettre
+        title: Avez-vous embauché via Tampa Devs Talent ?
+    invisible_banner_component:
+      cta: Contactez-nous
+      title_html: Votre profil d'entreprise est invisible. Veuillez contacter <a href="mailto:jobs@tampadevs.com">jobs@tampadevs.com</a> pour rétablir votre accès.
+    primary_action_component:
+      edit: Modifier
+    scheduling_link_component:
+      title: Planifier une réunion
+    show:
+      bio: Bio
+    subscriptions_component:
+      expires_on: Expire le
+      plan: Plan
+      status: Statut
+      title: Abonnement de l'entreprise
+    update:
+      updated: Votre entreprise a été mise à jour !
+    upgrade_account_component:
+      cta: Mettre à jour votre compte
+      title: Nécessite un abonnement actif pour l'entreprise.
+    upgrade_required_component:
+      body:
+        expired: Votre abonnement a expiré. Réactivez votre compte pour continuer à envoyer des messages aux développeurs.
+        upgrade: Avec votre plan actuel, vous ne pouvez envoyer des messages qu'aux développeurs recherchant un travail à temps partiel. Mettez à jour votre compte pour envoyer un message à ce développeur.
+      cta:
+        expired: Réactiver mon compte
+        upgrade: Mettre à jour mon compte
+      details: Voir les détails des tarifs
+      title:
+        expired: Abonnement expiré
+        upgrade: Mise à jour requise
+    website_link_component:
+      external_link: Ouvrir dans un nouvel onglet
+  cold_messages:
+    new:
+      title: Commencer une conversation
+      with: avec
+  conversations:
+    ago: il y a
+    index:
+      empty_state:
+        body: Commencez par trouver un développeur à qui envoyer un message.
+        cta: Trouver un développeur
+        title: Aucune conversation
+      title: Vos conversations
+    read_indicator_component:
+      read: Message lu.
+      unread: Message non lu.
+    show:
+      flag: Signaler cette conversation
+      og_title: Conversation avec %{with}
+      title: Conversation
+      with: avec
+  date:
+    formats:
+      month_year: "%B %Y"
+  deleted_account: "(compte supprimé)"
+  developer_mailer:
+    celebration_promotion:
+      subject: Comment se passe votre conversation avec %{contact} chez %{company}?
+    first_message:
+      subject: Conseils pour répondre à votre premier message sur Tampa Devs Talent
+    welcome:
+      subject: "Bienvenue à Tampa Devs Talent 👋"
+  developers:
+    admin_component:
+      confirm_make_invisible: Êtes-vous sûr de vouloir rendre ce développeur invisible ?
+      confirm_make_visible: Êtes-vous sûr de vouloir rendre ce développeur visible ?
+      conversations: Conversations
+      copy: Copier
+      feature: Mettre en avant
+      invisiblize: Rendre invisible
+      make_visible: Rendre visible
+      source_contributor: Contributeur de source
+      title: Admin
+    badges_component:
+      codeboxx_student: CodeBoxx
+      featured: En vedette
+      high_response_rate: Taux de réponse élevé
+      recently_added: Nouveau profil
+      recently_updated: Récemment mis à jour
+      source_contributor: Contributeur de source
+    celebration_package_requests:
+      create:
+        success: Merci ! Notre équipe vous contactera bientôt.
+      new:
+        company_name: Nom de l'entreprise
+        description: Félicitations pour votre nouveau travail ! Parlez-nous en et nous vous enverrons un package de célébration Tampa Devs Talent personnalisé, entièrement gratuit.
+        feedback: Retour d'information (optionnel)
+        feedback_help: Veuillez nous indiquer comment nous pouvons améliorer Tampa Devs Talent ou tout ce que vous souhaitez partager.
+        mailing_address: Adresse postale
+        mailing_address_help: Où pouvons-nous envoyer votre package de célébration ?
+        request_package: Demander un package
+        requesting: Demande en cours...
+        title: Avez-vous trouvé un emploi grâce à Tampa Devs Talent ?
+    count_component:
+      cta: Réinitialiser les filtres
+      title_html: Affichage de <span class='font-bold'>%{count}</span> sur <span class='font-bold'>%{total}</span>+ développeurs.
+    cover_image_component:
+      alt: Image de couverture du développeur
+    create:
+      created: Votre profil a été ajouté !
+    details:
+      title: Détails
+    edit:
+      title: Votre profil de développeur
+    form:
+      bio:
+        description: Partagez quelques paragraphes sur ce qui vous rend unique en tant que développeur. C'est votre chance de vous vendre auprès des employeurs potentiels – vendez-vous un peu !
+        examples:
+          accomplishment: Une réalisation récente ou une réussite
+          help: Comment vous pouvez aider là où d'autres ne le peuvent pas
+          learned: Quelque chose de nouveau que vous avez appris
+          origin: Votre histoire d'origine en tant que développeur
+          passion: Qu'est-ce qui vous passionne ?
+          title: Exemples de sujets
+          unique: Vos compétences uniques qui vous rendent génial
+        help_text: Les informations personnellement identifiables seront supprimées.
+        markdown: Le Markdown est pris en charge mais les liens et les images sont supprimés.
+      codeboxx_student:
+        label: Oui !
+        learn_more: <a style="text-decoration:underline" href="https://www.academy.codeboxx.com?utm_source=td_talent&utm_medium=organic" target="_blank">Cliquez ici</a> pour en savoir plus sur les programmes de bootcamp chez CodeBoxx.
+        title: Êtes-vous étudiant ou diplômé de CodeBoxx ?
+      creating: Création en cours...
+      loading: Chargement...
+      notifications:
+        product_announcement_notifications: Annonces de fonctionnalités
+        product_announcement_notifications_help: Tenez-moi informé des nouvelles fonctionnalités du produit.
+        profile_reminder_notifications: Rappels de profil
+        profile_reminder_notifications_help: Rappelez-moi périodiquement de mettre à jour mon profil de développeur.
+        title: Notifications par email
+      online_presence:
+        help_text: Où les gens peuvent-ils en savoir plus sur vous et votre travail ?
+        title: Présence en ligne
+      profile:
+        avatar: Avatar
+        avatar_error_text: Un problème est survenu lors du téléchargement de votre image, veuillez réessayer.
+        change: Télécharger
+        cover_image: Image de couverture
+        help_text: Ces informations seront affichées publiquement, soyez donc prudent avec ce que vous partagez.
+        hero_help_text: Résumez-vous en tant que développeur en quelques mots.
+        location_help_text: Fournir votre emplacement facilite la connexion avec les entreprises locales.
+        name_help_text_html: Votre nom ne sera <i>pas</i> affiché sur votre profil public.
+        title: Profil
+        upload_error_text: Un problème est survenu lors du téléchargement de votre image, veuillez réessayer.
+        upload_file: Télécharger un fichier
+        upload_help_text: PNG, JPG, GIF jusqu'à 10MB
+      role_level:
+        help_text: Sélectionnez tous les niveaux d'expérience que vous accepteriez.
+        title: Niveau de rôle
+      role_type:
+        help_text: Sélectionnez tous les rôles que vous accepteriez.
+        title: Type de rôle
+      scheduling:
+        help_text: Partagez votre lien de planification (Calendly, SavvyCal, etc.) pour faciliter l'organisation des entretiens avec les entreprises.
+        title: Planification
+      search_status:
+        actively_looking_help_text: Votre profil peut être mis en avant sur la page d'accueil.
+        not_interested_help_text: Votre profil n'apparaîtra pas dans les résultats de recherche.
+        open_help_text: Les entreprises peuvent toujours vous trouver, mais vous n'apparaîtrez pas sur la page d'accueil.
+        title: Statut de recherche
+      specialties:
+        description: Choisissez jusqu'à 5 spécialités qui vous distinguent des autres développeurs. Choisissez celles qui vous passionnent - vous n'avez pas besoin d'être un expert.
+        new:
+          before: Si vous ne voyez pas une spécialité correspondant à vos compétences uniques, vous pouvez
+          cta: suggérer une nouvelle spécialité
+          subject: Suggestion de nouvelle spécialité de développeur
+        note:
+          description: Cette fonctionnalité est en bêta et pourrait être modifiée. Ajoutez vos spécialités dès que possible - les entreprises pourront bientôt les filtrer.
+          title: BÊTA
+      title: Votre profil de développeur
+      updating: Mise à jour en cours...
+      work_preferences:
+        help_text: Quel type de travail recherchez-vous ensuite ?
+        title: Préférences de travail
+    index:
+      empty_state:
+        body: Essayez de changer ou de réinitialiser vos filtres.
+        title: Aucun développeur trouvé
+      title: Développeurs de Tampa Bay
+    invisible_banner_component:
+      cta: Contactez-nous
+      title_html: Votre profil de développeur est invisible. Veuillez contacter <a href="mailto:jobs@tampadevs.com">jobs@tampadevs.com</a> pour rétablir votre accès.
+    meta:
+      description: "%{count}+ développeurs locaux à la recherche de leur prochain emploi. Pour toutes les piles, niveaux d'expérience et modes de travail, vous les trouverez tous ici."
+      freelance: freelance
+      hire: Embaucher
+      in_country: dans %{country}
+      ruby_on_rails_developers: développeurs à Tampa Bay
+    new_field_component:
+      new: Nouveau !
+    new_fields_component:
+      cta: Compléter mon profil
+      title: De nouveaux champs ont été ajoutés aux profils des développeurs !
+    open_graph_tags_component:
+      turbo_native_title: Profil de développeur
+    profile_action_component:
+      add_profile: Ajouter mon profil
+      edit_profile: Mettre à jour mon profil
+    query_component:
+      all_countries:
+        title: Toutes les localisations
+      apply: Appliquer
+      badge:
+        title: Badges
+      clear: Réinitialiser
+      close_menu: Fermer le menu
+      country:
+        title: Localisation
+      filters: Filtres
+      include_not_interested: Inclure les développeurs non intéressés actuellement
+      paywalled_search:
+        title: La recherche de texte nécessite un compte payant.
+      role_level:
+        title: Niveau de rôle
+      search_query_label: Rechercher des profils
+      search_query_placeholder: Hotwire, React, Heroku, etc.
+      specialties:
+        title: Spécialités
+      timezone:
+        title: Fuseau horaire
+      title: Filtres de développeur
+      work_preference:
+        title: Préférence de travail
+    query_sort_button_component:
+      sort:
+        newest: Les plus récents
+        recommended: Recommandé
+        title: Trier
+    recommended_sort_banner:
+      cta: En savoir plus
+      dismiss: Ignorer
+      title: Vous triez par recommandé, ce qui est encore en bêta.
+    search_status:
+      actively_looking: Recherche activement un emploi
+      actively_looking_tag: Recherche active
+      not_interested: Pas intéressé par un emploi pour le moment
+      not_interested_tag: Pas intéressé
+      open: Ouvert, mais ne recherche pas activement
+      open_tag: Ouvert aux offres
+    show:
+      description: Description
+      edit: Éditer
+      hire: Embauchez-moi
+      message: Message
+      share: Partager
+    specialty_dropdown_component:
+      specialties_placeholder: IA, Turbo Native, DevOps, etc.
+    update:
+      updated: Votre profil a été mis à jour !
+  dir: ltr
+  errors:
+    business_blank: Complétez votre profil entreprise pour envoyer des messages aux développeurs.
+    business_invisible: Votre profil entreprise est invisible, et sa capacité à interagir avec les développeurs est restreinte. Veuillez contacter jobs@tampadevs.com pour rétablir votre accès.
+    business_no_phone_number: Veuillez fournir le numéro de téléphone de votre entreprise.
+    business_subscription_inactive: Abonnez-vous à un abonnement entreprise pour envoyer des messages aux développeurs.
+    business_subscription_no_profile: Avant de vous abonner, complétez votre profil entreprise.
+    developer_blank: Veuillez d'abord créer un profil développeur.
+    developer_invisible: Votre profil développeur est invisible, et sa capacité à interagir avec les entreprises est restreinte. Veuillez contacter jobs@tampadevs.com pour rétablir votre accès.
+    hiring_agreements:
+      cold_message: Veuillez signer l'accord de recrutement pour envoyer des messages aux développeurs.
+      payment: Veuillez signer l'accord de recrutement avant de vous abonner.
+    messages:
+      attached: n'est pas joint
+      content_type_invalid: format d'image non pris en charge
+      max_file_size_invalid: image supérieure à %{size}
+    unauthorized: Vous n'avez pas accès à cela.
+  hired:
+    show:
+      description: Tampa Devs Talent offre un package de célébration pour vous féliciter de votre embauche.
+      image_alt: Package de célébration Tampa Devs Talent
+      title: Félicitations pour votre nouveau travail !
+  hiring_agreements:
+    signatures:
+      create:
+        created: Accord de recrutement signé.
+      new:
+        accept: Accepter l'accord
+        accepting: Acceptation en cours...
+        agreement: En cochant cette case, je confirme ma compréhension et mon acceptation complètes des conditions du site. Je reconnais que cela constitue un accord juridiquement contraignant.
+        description: Dernière mise à jour %{last_updated}
+        questions_html: Des questions ? Envoyez un email à l'équipe Tampa Devs Talent à <a href="mailto:jobs@tampadevs.com" class="font-medium no-underline hover:underline">jobs@tampadevs.com</a>.
+        sign_below: Signez l'accord ci-dessous
+        title: Accord de recrutement Tampa Devs Talent
+    terms:
+      show:
+        download: Télécharger le PDF signé
+        signed_by: par %{name}
+        signed_on: Signé le %{date}
+  home:
+    show:
+      description_og: Tampa Devs Talent donne du pouvoir aux développeurs locaux et soutient le bien social. Arrêtez de parcourir les offres d'emploi et détendez-vous pendant que les entreprises vous contactent !
+      developers_heading: Nouveaux développeurs locaux géniaux sur Tampa Devs Talent
+      get_started: Commencer
+      learn_more: En savoir plus
+      more: Voir plus de développeurs
+      subtitle_1: Tampa Devs Talent
+      subtitle_2: donne du pouvoir aux développeurs locaux et soutient le bien social.
+      subtitle_3: Arrêtez de parcourir les offres d'emploi et détendez-vous pendant que les entreprises vous contactent !
+      hero: Le site d'emploi inversé pour la communauté des développeurs de Québec
+      title_1: Le tableau de bord inversé pour
+      title_2: la communauté des développeurs de Tampa Bay
+      title_og: Le tableau de bord inversé pour la communauté des développeurs de Tampa Bay
+      turbo_native_title: Tampa Devs Talent
+  impersonating_banner_component:
+    cta: Déconnexion
+    title: Connecté en tant que %{email}
+  loading_component:
+    loading: Chargement...
+  messages:
+    form:
+      celebration_package_reminder_html: Embauché ? N'oubliez pas de demander un <a class='underline' href="/hired">package de célébration</a> pour des goodies gratuits !
+      help: Ajoutez votre message
+      hiring_fee_agreement: J'accepte de payer à Tampa Devs Talent les frais de recrutement de 5% si j'embauche ce développeur pour un poste à temps plein.
+      hiring_fee_cta: Des questions ?
+      sending: Envoi en cours...
+      submit: Envoyer
+      terms: Voir les conditions complètes
+    message:
+      wrote: a écrit
+      you: Vous
+  nav_bar:
+    base_component:
+      affiliates: Programme d'affiliation
+      bootcamps: Bootcamps
+      developers: Développeurs
+      home: Accueil
+      pricing: Tarifs
+    guest_component:
+      register: S'inscrire
+      sign_in: Connexion
+    user_component:
+      admin: Admin
+      billing: Facturation
+      blocked_conversations: Conversations bloquées
+      businesses_hiring_invoice_requests: Factures de recrutement
+      conversations: Conversations
+      developers_celebration_package_requests: Packages de célébration
+      found_a_job: Vous avez trouvé un emploi ?
+      get_started: Commencer
+      hired_a_dev: Vous avez embauché un dev ?
+      hiring_agreement_terms: Conditions de l'accord de recrutement
+      my_business_profile: Mon profil entreprise
+      my_conversations: Mes conversations
+      my_developer_profile: Mon profil développeur
+      new: Nouveau !
+      new_notifications: Vous avez une nouvelle notification
+      open_user_menu: Ouvrir le menu utilisateur
+      referrals: Parrainages
+      sign_out: Déconnexion
+      specialties: Spécialités des développeurs
+      transactions: Transactions
+      users: Utilisateurs
+      view_conversations: Voir les conversations
+      view_notifications: Voir les notifications
+  notifications:
+    admin:
+      affiliates:
+        registration_notification:
+          title: "%{email} a demandé à rejoindre le programme d'affiliation"
+      businesses:
+        hiring_invoice_request_notification:
+          title: "%{business} a embauché un développeur"
+      developers:
+        celebration_package_request:
+          title: "%{developer} a demandé un package de célébration"
+      new_business_notification:
+        email_subject: Nouvelle entreprise ajoutée
+        title: "%{business} a ajouté son entreprise"
+      new_conversation_notification:
+        email_subject: Nouvelle conversation commencée
+        title: "%{name} (%{company}) a commencé une conversation avec %{developer}"
+      new_developer_notification:
+        email_subject: Nouveau profil développeur ajouté
+        title: "%{developer} a ajouté son profil développeur"
+      potential_hire_notification:
+        email_subject: Nouvelle embauche potentielle
+        title: "%{developer} pourrait avoir été embauché"
+    businesses:
+      invisiblize_notification:
+        title: Votre profil sur Tampa Devs Talent a été signalé
+    developers:
+      invisiblize_notification:
+        title: Votre profil sur Tampa Devs Talent a été signalé
+      product_announcement_notification:
+        email_subject: "[Tampa Devs Talent] Nouvelle fonctionnalité : Spécialités des développeurs 🚨"
+        title: 'Nouvelle fonctionnalité : Spécialités des développeurs'
+      profile_reminder_notification:
+        email_subject: Votre profil Tampa Devs Talent est-il à jour ?
+        title: Votre profil Tampa Devs Talent est-il à jour ?
+    index:
+      cta: Voir l'historique
+      empty_state:
+        body: Vous n'avez aucune notification non lue.
+        title: Aucune nouvelle notification
+      mark_all_as_read: Marquer tout comme lu
+      title: Nouvelles notifications
+    new_message_notification:
+      email_subject: "%{sender} vous a envoyé un message sur Tampa Devs Talent"
+      title: "%{sender} vous a envoyé un message"
+    show:
+      notice: Notification marquée comme lue.
+  open_startup:
+    contributions:
+      index:
+        amount: Montant
+        contributions: Contributions
+        date: Date
+        description: Tampa Devs Talent soutient directement Tampa Devs, une communauté de développement de logiciels à but non lucratif dédiée à accélérer l'accès à la formation et aux opportunités de carrière dans l'industrie du logiciel de Tampa. Gratuitement, et pour tout le monde.
+        external_link: Ouvrir dans un nouvel onglet
+        open_startup: Finances ouvertes
+        recipient: Bénéficiaire
+        title: Contributions de Tampa Devs Talent
+        to_co2_removal: pour la réduction de CO₂
+        to_communities: pour les programmes communautaires de Tampa Devs
+    dashboard:
+      show:
+        contributions: Contributions
+        date: Date
+        description: Tampa Devs Talent est une startup ouverte avec des métriques entièrement publiques.
+        expenses: Dépenses
+        external_link: Ouvrir dans un nouvel onglet
+        mrr: MRR
+        profit: Bénéfice
+        revenue: Revenus
+        title: Finances ouvertes
+    expenses:
+      index:
+        amount: Montant
+        date: Date
+        description: Toutes les dépenses associées à Tampa Devs Talent, y compris l'hébergement, les frais et les achats.
+        expenses: Dépenses
+        open_startup: Finances ouvertes
+        source: Source
+        title: Dépenses de Tampa Devs Talent
+    revenue:
+      index:
+        amount: Montant
+        date: Date
+        description: Tous les revenus générés par Tampa Devs Talent depuis son lancement en juin 2023.
+        open_startup: Finances ouvertes
+        revenue: Revenus
+        source: Source
+        title: Revenus de Tampa Devs Talent
+  pay_mailer:
+    subscription_renewing:
+      subject: Votre abonnement Tampa Devs Talent renouvelle bientôt. Avez-vous embauché quelqu'un ?
+  policies:
+    privacy:
+      show:
+        title: Politique
+    terms:
+      show:
+        title: Conditions générales
+  pricing:
+    cta:
+      cta: Commencez dès aujourd'hui
+      subtitle: Trouvez votre prochaine excellente recrue dès aujourd'hui.
+      title: Prêt à commencer ?
+    faq:
+      annual:
+        a_html: Oui ! Nous proposons un plan mensuel à 99 $/mois et un plan annuel à 999 $/an (une économie de 16 %)
+        q: Puis-je payer annuellement ou chaque année ?
+      cancellation:
+        a_html: Oui ! Vous pouvez annuler votre abonnement depuis le lien Facturation dans le menu déroulant de l'utilisateur. Vous perdrez l'accès à toutes les fonctionnalités payantes à la fin de votre période de facturation.
+        q: Puis-je annuler mon abonnement à tout moment ?
+      developers:
+        a: Non. Tampa Devs Talent est gratuit pour les développeurs !
+        q: Est-ce que Tampa Devs Talent coûte quelque chose pour les développeurs ?
+      fee:
+        a_html: Si vous embauchez un employé via Tampa Devs Talent, vous acceptez de payer des frais de placement égaux à 5 % de son salaire.
+        q: Comment fonctionnent les frais de recrutement de 5 % ?
+      support:
+        a_html: Envoyez un email à l'équipe Tampa Devs Talent pour toute question. Vous pouvez nous joindre à <a href='mailto:jobs@tampadevs.com' class='underline'>jobs@tampadevs.com</a>.
+        q: Qui puis-je contacter pour des questions plus spécifiques ?
+      title: Foire aux questions
+      warranty:
+        a_html: Oui ! Tampa Devs offre une garantie de 90 jours pour toutes les embauches, et nous émettrons un crédit égal au montant total des frais de placement initialement payés.
+        q: Y a-t-il une garantie sur les frais de recrutement ?
+    hero:
+      description: Connectez-vous directement avec des centaines de développeurs locaux à Tampa Bay à la recherche de leur prochain emploi.
+      title: Embauchez des développeurs à Tampa Bay
+    plan:
+      cta_annual: Optez pour l'annuel. Économisez 16 %
+      cta_monthly: Optez pour le mensuel. Annulez à tout moment
+      description: Recrutez directement à partir d'un pool de développeurs locaux à Tampa Bay, à tous les niveaux d'expérience.
+      features:
+        climate_html: Nous donnons 1 % de nos revenus pour lutter contre le changement climatique. <a style="text-decoration:underline" href="https://climate.stripe.com/nxdibE">En savoir plus</a>
+        email_updates: Mises à jour par email des nouveaux candidats
+        message: Message direct avec les développeurs
+        oss: 100 % à but non lucratif. Soutient les programmes éducatifs et communautaires de Tampa Devs, la communauté de développeurs à but non lucratif la plus dynamique de Tampa
+        support: Support direct et personnel de l'équipe Talent de Tampa Devs
+        title: Exclusivités Tampa Devs Talent
+        warranty: Garantie de 90 jours sur les frais de placement
+      hiring_fee: "+ 5 % du salaire de la première année"
+      per_month: "/mois"
+      per_year: "/an"
+      title_html: Pour votre 1<sup>er</sup> recrutement et au-delà
+    purchase_button:
+      title: Commencez dès aujourd'hui
+    show:
+      description: Abonnez-vous à Tampa Devs Talent et connectez-vous directement avec des centaines de développeurs locaux à Tampa à la recherche de travail en freelance, en contrat ou à temps plein.
+      title_og: Tarification
+      turbo_native_title: Embauchez des développeurs locaux à Tampa Bay
+    stats:
+      description: Conversations organiques et authentiques. Taux de réponse plus élevés que sur LinkedIn ou les emails à froid.
+      new_devs: Nouveaux développeurs par mois
+      rails_developers: Développeurs à Tampa Bay
+      response_rate: Taux de réponse
+      title: Conçu par et pour les développeurs de Tampa
+  public_profiles:
+    new:
+      cancel: Annuler
+      copy_link: Copier le lien
+      message: Partagez votre profil de développeur en privé avec quelqu'un. Cela révélera des informations cachées comme votre vrai nom, vos liens sociaux et votre adresse email à cette personne.
+      title: Partager votre profil
+  read_notifications:
+    create:
+      notice: Toutes les notifications marquées comme lues.
+    index:
+      empty_state_body: Vous n'avez aucune notification lue.
+      empty_state_title: Aucune notification lue
+      title: Notifications lues
+  registrations:
+    create_account: créer un compte
+    register: S'inscrire
+    sign_up_hero: Créez votre compte
+    sign_up_html: Ou %{link}
+  role_levels:
+    component:
+      interested_in_roles: Intéressé par des rôles
+  role_types:
+    component:
+      interested_in_roles: Intéressé par des rôles
+  roles:
+    new:
+      hiring_developers: Je recrute des développeurs
+      hiring_developers_help_text: Vous êtes une entreprise cherchant à recruter des développeurs freelance, à temps partiel ou à temps plein dans la région de Tampa Bay.
+      looking_for_work: Je cherche du travail
+      looking_for_work_help_text: Vous êtes un développeur de Tampa Bay à la recherche de votre prochaine mission.
+      what_brings_you_here: Qu'est-ce qui vous amène à Tampa Devs Talent ?
+  sessions:
+    sign_in: Se connecter
+    sign_in_hero: Connectez-vous à votre compte
+    sign_in_link: connectez-vous à votre compte
+    sign_in_link_html: Ou %{link}
+  shared:
+    footer:
+      about: À propos
+      analytics: Analyses
+      copyright: Tous droits réservés.
+      email: Email
+      github: GitHub
+      open_source: Open source
+      open_startup: Finances ouvertes
+      privacy_policy: Politique de confidentialité
+      status: État du site
+      support: Support
+      tampadevs_com: Tampa Devs
+      terms_and_conditions: Conditions générales
+      twitter: Twitter
+  submit_button_component:
+    save: Enregistrer
+    saving: Enregistrement...
+  subscription_cta_component:
+    cta: Commencez à recruter
+    description: Accédez à %{developers}+ développeurs dans la région de Tampa Bay.
+    title: Inscrivez-vous maintenant pour voir plus de profils.
+  users:
+    paywalled:
+      collapse_control_component:
+        title: Vous avez besoin d'un abonnement payant pour débloquer cette fonctionnalité.
+    paywalled_component:
+      description: Informations visibles uniquement avec un abonnement entreprise.
+      title: Informations privées
+    suspended:
+      show:
+        cta: Envoyez un email à l'équipe Tampa Devs Talent
+        description: Le non-respect de l'accord de recrutement a contraint Tampa Devs Talent à suspendre votre compte. Contactez l'équipe Tampa Devs Talent pour payer vos frais de recrutement obligatoires et reprendre votre compte.
+        learn_more: En savoir plus
+        title: Votre compte a été suspendu.
+  utc_offsets:
+    component:
+      gmt: GMT

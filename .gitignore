@@ -52,3 +52,5 @@ dip.yml
 tests
 
 .irb_history
+
+./config/database.yml
