@@ -1,50 +1,160 @@
 <%= open_graph_tags title: t(".title_og"), turbo_native_title: t(".turbo_native_title"), description: t(".description_og") %>
 
-<div class="hero">
+<section class="hero">
   <div class="container">
     <h2><%= t("home.show.hero") %></h2>
   </div>
-</div>
-<div class="mt-16 mx-auto max-w-7xl px-4 sm:mt-24">
-  <div class="text-center">
-    <h1 class="text-3xl tracking-tight font-extrabold sm:text-5xl md:text-6xl">
-      <span class="block text-blue-950"><%= t(".title_1") %></span>
-      <span class="block text-blue-800"><%= t(".title_2") %></span>
-    </h1>
-    <p class="mt-3 max-w-md mx-auto text-base text-blue-950 sm:text-lg md:mt-5 md:text-xl md:max-w-3xl">
-      <%= t(".subtitle_1") %>
-      <span><%= t(".subtitle_2") %></span>
-      <span class="md:block"><%= t(".subtitle_3") %></span>
-    </p>
-    <div class="mt-5 max-w-md mx-auto sm:flex sm:justify-center md:mt-8">
-      <div class="rounded-md shadow">
-        <%= link_to t(".get_started"), new_role_path, class: "w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-white bg-blue-500 hover:bg-blue-700 md:py-4 md:text-lg md:px-10" %>
+</section>
+
+<section class="bg-gradient-to-b from-red-600 to-red-900">
+  <div class="max-w-5xl mx-auto">
+    <div class="pb-5 px-4 lg:px-0 sm:flex sm:items-center sm:justify-between">
+      <h2 class="text-lg leading-6 font-medium text-blue-900">
+        <%= t(".developers_heading") %>
+      </h2>
+    </div>
+
+    <div class="shadow overflow-hidden sm:rounded-md divide-y divide-gray-200">
+      <%= render Developers::CardComponent.with_collection(@developers) %>
+    </div>
+
+    <div class="mt-8 text-right mr-2 lg:mr-0">
+      <%= link_to developers_path, class: "inline-flex items-center px-6 py-3 border border-transparent shadow-sm text-base font-medium rounded-md text-white bg-blue-500 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500" do %>
+        <%= t(".more") %>
+        <%= inline_svg_tag "icons/outline/arrow_right_circle.svg", class: "ml-3 -mr-1 h-5 2-5", aria_hidden: true %>
+      <% end %>
+    </div>
+  </div>
+</section>
+
+<section class="flex bg-black text-white p-6 justify-center items-center flex-col">
+  <div>
+    <%= image_tag 'dot.png' %>
+  </div>
+  <div class="pt-5">
+    <h2 class="text-2xl font-bold mb-4">Votre futur candidat est ici.</h2>
+  </div>
+</section>
+
+<section class="bg-gray-100 text-gray-800 flex relative h-[1000px]">
+  <!-- Left Column -->
+  <div class="flex w-1/2 bg-orange-50 p-20 items-center justify-center">
+    <div class="w-2/3 ml-auto w-[475px] h-[615px]">
+      <h2 class="text-2xl font-bold mb-4">À propos de quebec.dev</h2>
+      <p class="mb-4">
+        Lorem ipsum dolor sit amet consectetur. Positum in mauris eleifend tempus viverra et in sed.
+        Enim amet in viverra adipiscing pellentesque. Donec consequat egestas sit amet.
+        Pellentesque luctus sit facilisi aliquam. Nec risus nunc ultrices diam gravida sit nec.
+        Mi vitae eu nec nec. Quis vel ullamcorper sed risus dictum ornare nec. Egestas dolor porttitor nunc.
+        Duis eleifend ipsum aliquam faucibus turpis ultrices.
+      </p>
+      <p class="mb-4">
+        Tincidunt in et platea sapien gravida. Vivamus erat sed amet non ultrices vel ultricies.
+        Enim eu ornare velit nec non enim rhoncus. Lorem ipsum dolor sit amet adipiscing lorem.
+        Tincidunt proin facilisi elementum et mi arcu. Sapien gravida facilisis massa vulputate integer
+        egestas at ultricies risus. Euismod quam egestas eget augue tempus nec.
+      </p>
+      <p>
+        Tincidunt in et platea sapien gravida. Vivamus erat sed amet non ultrices vel ultricies.
+        Enim eu ornare velit nec non enim rhoncus. Lorem ipsum dolor sit amet adipiscing lorem.
+        Tincidunt proin facilisi elementum et mi arcu. Sapien gravida facilisis massa vulputate integer
+        egestas at ultricies risus. Euismod quam egestas eget augue tempus nec.
+      </p>
+    </div>
+  </div>
+  <!-- Right Column -->
+  <div class="w-1/2 flex items-center justify-center bg-orange-100 p-10">
+    <div class="mr-auto">
+      <%= image_tag "table.png", alt: 'Table with laptop and rose' %>
+    </div>
+  </div>
+  <!-- "Middle Column" -->
+  <div class="absolute inset-0 flex mt-20 justify-center">
+    <%= image_tag "dot.png", alt: "Logo", class: "h-12 w-12" %>
+  </div>
+</section>
+
+<section class="flex bg-black text-white p-6 justify-center items-center flex-col">
+  <div class="mt-10">
+    <%= image_tag 'dot.png' %>
+  </div>
+  <div class="pt-5 text-center w-[1100px]">
+    <h2 class="text-2xl font-bold mb-4">Rejoindre la communauté de développeurs</h2>
+    <p class="text-left mb-4">Tu es un développeur à la recherche de nouveaux défis ou tout simplement à la recherche DU
+      poste parfait pour
+      toi?
+    <p/>
+
+    <p class="text-left mb-4">Rejoints les 200 autres développeurs inscris sur quebec.dev et qui sait, peut-être
+      trouveras-tu l’âme-soeur
+      professionnelle ou la carrière parfaite pour toi.</p>
+
+    <p class="text-left mb-4">Créez ton profile via le lien-ci bas. Les entreprises partenaires auront ainsi accès à ton
+      profile
+      développeur.</p>
+
+    <button class="bg-orange-50 text-black p-2 px-10 m-5 w-[400px]">S’inscrire</button>
+  </div>
+</section>
+
+<section class="p-6 bg-gradient-to-b from-red-600 to-red-900">
+  <h2 class="text-2xl font-bold mb-4">Events</h2>
+</section>
+
+<section class="flex bg-black text-white p-6 justify-center items-center flex-col">
+  <div class="mt-10">
+    <%= image_tag 'dot.png' %>
+  </div>
+  <div class="pt-5 text-center w-[1100px]">
+    <h2 class="text-2xl font-bold mb-4">Nos Partenaires</h2>
+    <div class="flex flex-row space-x-10 items-center justify-center my-10">
+      <%= image_tag 'codeboxx.png', class:"h-[60px]" %>
+      <%= image_tag 'desjardins.png', class:"h-[60px]" %>
+      <%= image_tag 'cciq.png', class:"h-[60px]" %>
+    </div>
+  </div>
+</section>
+
+
+<section class="bg-gray-100 text-gray-800 flex relative h-[850px]">
+  <!-- Left Column -->
+  <div class="flex w-1/2 bg-orange-50 p-20 items-center justify-center">
+  </div>
+  <!-- Right Column -->
+  <div class="w-1/2 flex items-center justify-center bg-orange-100 p-10">
+  </div>
+  <div class="absolute inset-x-0 top-0 flex mt-10 justify-center grid-cols-1 gap-4">
+    <div class="relative">
+      <div class="flex inset-x-0 mb-10 items-center justify-center">
+        <%= image_tag "dot.png", alt: "Logo", class: "h-12 w-12" %>
       </div>
-      <div class="mt-3 rounded-md shadow sm:mt-0 sm:ml-3">
-        <%= link_to t(".learn_more"), about_path, class: "w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-blue-950 bg-white hover:bg-blue-50 md:py-4 md:text-lg md:px-10" %>
+      <div  class="inset-x-0 text-center">
+        <h2>Contactez-Nous</h2>
+      </div>
+      <div class="inset-x-0">
+        <form class="space-y-4">
+          <div class="grid grid-cols-2 gap-4">
+            <div class="col-span-2">
+              <input type="text" placeholder="Nom" class="p-4 border border-gray-300 rounded w-full">
+            </div>
+            <div class="">
+              <input type="text" placeholder="Entreprise" class="p-4 border border-gray-300 rounded">
+            </div>
+            <div class="">
+              <input type="email" placeholder="Courriel" class="p-4 border border-gray-300 rounded">
+            </div>
+            <div class="col-span-2">
+              <input type="text" placeholder="Sujet" class="p-4 border border-gray-300 rounded w-full">
+            </div>
+            <div class="col-span-2">
+              <textarea placeholder="Message" class="p-4 border border-gray-300 rounded w-full h-32"></textarea>
+            </div>
+          </div>
+          <div class="text-center">
+            <button type="submit" class="bg-black text-white py-2 px-4 rounded">Soumettre</button>
+          </div>
+        </form>
       </div>
     </div>
   </div>
-  <div class="mt-20 sm:mt-20">
-    <iframe id="next-event-widget" src="https://events.api.tampa.dev/widget/next-event?groups=tampadevs" frameborder="0" scrolling="no"></iframe>
-  </div>
-</div>
-
-<div class="max-w-5xl mx-auto mt-20 sm:mt-20">
-  <div class="pb-5 px-4 lg:px-0 sm:flex sm:items-center sm:justify-between">
-    <h2 class="text-lg leading-6 font-medium text-blue-900">
-      <%= t(".developers_heading") %>
-    </h2>
-  </div>
-
-  <div class="shadow overflow-hidden sm:rounded-md divide-y divide-gray-200">
-    <%= render Developers::CardComponent.with_collection(@developers) %>
-  </div>
-
-  <div class="mt-8 mb-16 text-right mr-2 lg:mr-0">
-    <%= link_to developers_path, class: "inline-flex items-center px-6 py-3 border border-transparent shadow-sm text-base font-medium rounded-md text-white bg-blue-500 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500" do %>
-      <%= t(".more") %>
-      <%= inline_svg_tag "icons/outline/arrow_right_circle.svg", class: "ml-3 -mr-1 h-5 2-5", aria_hidden: true %>
-    <% end %>
-  </div>
-</div>
+</section>

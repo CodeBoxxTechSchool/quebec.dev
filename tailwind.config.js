@@ -21,9 +21,6 @@ module.exports = {
 
   theme: {
     extend: {
-      colors: {
-        red: colors.rose,
-      },
       fontFamily: {
         sans: ["Nunito", ...defaultTheme.fontFamily.sans],
         serif: ["Nunito", "serif"],
