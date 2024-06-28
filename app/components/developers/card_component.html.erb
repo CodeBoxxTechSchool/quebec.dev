@@ -1,28 +1,35 @@
-<%= tag.div class: "relative border-b border-gray-100" do %>
-  <%= link_to developer, class: class_names("bg-white hover:bg-blue-50 py-6 px-8 flex space-x-4 sm:space-x-8", "border-l-4 border-blue-400": highlight?) do %>
-    <div class="shrink-0">
-      <%= render AvatarComponent.new(avatarable: developer, variant: :medium) %>
-    </div>
-
-    <div class="self-start flex-1 min-w-0 space-y-4">
-      <div class="flex items-baseline">
-        <h2 class="text-lg sm:text-xl font-medium text-blue-900 line-clamp-2 break-word" title="<%= hero %>">
-          <%= hero %>
-        </h2>
-
-        <div class="hidden sm:inline-flex ml-auto flex-row-reverse shrink-0 items-center text-blue-400">
-          <%= render Developers::SearchStatusComponent.new(developer) %>
+<div class="bg-white hover:bg-red-50 flex sm:space-x-8 w-[395px] h-[184px]">
+  <div class="max-w-lg w-full bg-white overflow-hidden">
+    <div class="grid grid-cols-12 h-full">
+      <div class="col-span-3">
+        <%= render AvatarComponent.new(avatarable: developer, variant: :medium, classes: 'h-[154px]') %>
+        <%= button_to 'ENGAGER', developer, method: :get, class: "bg-red-600 text-white h-[30px] w-full" %>
+      </div>
+      <div class="col-span-9">
+        <div class="grid grid-rows-12">
+          <div class="h-7 text-xs space-x-10 grid-rows-1 bg-orange-50 p-1.5">
+            <div class="flex flex-row">
+              <p class="mr-auto">RECHERCHE ACTIVEMENT</p>
+              <%= image_tag 'info-circle.png' %>
+            </div>
+          </div>
+          <div class="flex flex-row text-[8px] px-2 py-0 grid-rows-1">
+            <p class="mr-auto">Favorise le Télétravail</p>
+            <p class="">Ville de Québec</p>
+          </div>
+          <div class="grid-rows-4 text-xs p-1.5">Développeur sénior de 20 ans d’expérience en React Native et .net, recherche un poste
+            permanent. Que ce soit sur le volet du temps...
+          </div>
+          <div class="grid-rows-4 text-[10px] p-1.5">My passion for coding ignited during my college days when I discovered the power of Java.
+            I...
+          </div>
+          <div class="flex flex-row">
+            <%#= render Developers::BadgesComponent.new(developer) %>
+            <%= render Developers::SpecialtiesComponent.new(developer.specialties) %>
+            <%= image_tag 'heart.png', class: 'ml-auto p-2' %>
+          </div>
         </div>
       </div>
-
-      <div class="space-y-2">
-        <%= render Developers::BadgesComponent.new(developer) %>
-        <%= render Developers::SpecialtiesComponent.new(developer.specialties) %>
-      </div>
-
-      <div class="text-sm sm:text-base text-blue-950 space-y-4">
-        <p class="line-clamp-3 break-words"><%= developer.plain_text_bio %></p>
-      </div>
     </div>
-  <% end %>
-<% end %>
+  </div>
+</div>

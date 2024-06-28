@@ -7,7 +7,7 @@ class BadgeComponent < ApplicationComponent
   end
 
   def call
-    tag.span title, class: class_names("inline-flex items-center rounded-md px-2.5 py-0.5 text-sm font-medium", color_classes)
+    tag.span title, class: class_names("inline-flex items-center rounded-full px-2.5 py-0.5 text-xs font-medium", color_classes)
   end
 
   def color_classes
@@ -22,6 +22,8 @@ class BadgeComponent < ApplicationComponent
       "bg-purple-100 text-purple-800"
     when :sky
       "bg-sky-100 text-sky-600"
+    when :black
+      "bg-black text-white"
     else
       raise "Unknown color: #{color}"
     end

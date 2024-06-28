@@ -1,8 +1,8 @@
 <% if specialties.any? %>
   <div class="flex flex-wrap items-start">
-    <% specialties.each do |specialty| %>
-      <div class="mr-4 mb-2">
-        <%= render BadgeComponent.new(specialty.name, color: "gray") %>
+    <% specialties.take(3).each do |specialty| %>
+      <div class="mx-2">
+        <%= render BadgeComponent.new(specialty.name, color: "black") %>
       </div>
     <% end %>
   </div>

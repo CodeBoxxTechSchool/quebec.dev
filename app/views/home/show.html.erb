@@ -7,22 +7,26 @@
 </section>
 
 <section class="bg-gradient-to-b from-red-600 to-red-900">
-  <div class="max-w-5xl mx-auto">
-    <div class="pb-5 px-4 lg:px-0 sm:flex sm:items-center sm:justify-between">
-      <h2 class="text-lg leading-6 font-medium text-blue-900">
-        <%= t(".developers_heading") %>
-      </h2>
+  <div class="max-w-7xl mx-auto">
+    <div class="flex text-white p-6 justify-center items-center flex-col">
+      <div class="pt-10">
+        <%= image_tag 'dot.png' %>
+      </div>
+      <div class="pt-5">
+        <h2 class="text-2xl font-bold mb-4"><%= t(".developers_heading") %></h2>
+      </div>
     </div>
 
-    <div class="shadow overflow-hidden sm:rounded-md divide-y divide-gray-200">
-      <%= render Developers::CardComponent.with_collection(@developers) %>
+    <div class="container mx-auto">
+      <div class="grid grid-cols-1 sm:grid-cols-3 sm:grid-rows-2 gap-4 gap-x-0">
+        <%= render Developers::CardComponent.with_collection(@developers) %>
+      </div>
     </div>
 
-    <div class="mt-8 text-right mr-2 lg:mr-0">
-      <%= link_to developers_path, class: "inline-flex items-center px-6 py-3 border border-transparent shadow-sm text-base font-medium rounded-md text-white bg-blue-500 hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500" do %>
-        <%= t(".more") %>
-        <%= inline_svg_tag "icons/outline/arrow_right_circle.svg", class: "ml-3 -mr-1 h-5 2-5", aria_hidden: true %>
-      <% end %>
+    <div class="mt-8 text-right mr-2 lg:mr-0 flex items-center justify-center pb-32 pt-10">
+      <button class="border-white border px-10 py-2 text-white">
+        Voir tous les candidats
+      </button>
     </div>
   </div>
 </section>
@@ -108,9 +112,9 @@
   <div class="pt-5 text-center w-[1100px]">
     <h2 class="text-2xl font-bold mb-4">Nos Partenaires</h2>
     <div class="flex flex-row space-x-10 items-center justify-center my-10">
-      <%= image_tag 'codeboxx.png', class:"h-[60px]" %>
-      <%= image_tag 'desjardins.png', class:"h-[60px]" %>
-      <%= image_tag 'cciq.png', class:"h-[60px]" %>
+      <%= image_tag 'codeboxx.png', class: "h-[60px]" %>
+      <%= image_tag 'desjardins.png', class: "h-[60px]" %>
+      <%= image_tag 'cciq.png', class: "h-[60px]" %>
     </div>
   </div>
 </section>
@@ -128,7 +132,7 @@
       <div class="flex inset-x-0 mb-10 items-center justify-center">
         <%= image_tag "dot.png", alt: "Logo", class: "h-12 w-12" %>
       </div>
-      <div  class="inset-x-0 text-center">
+      <div class="inset-x-0 text-center">
         <h2>Contactez-Nous</h2>
       </div>
       <div class="inset-x-0">
