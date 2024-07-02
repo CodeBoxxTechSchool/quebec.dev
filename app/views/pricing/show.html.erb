@@ -1,6 +1,6 @@
 <%= open_graph_tags title: t(".title_og"), turbo_native_title: t(".turbo_native_title"), description: t(".description"), image: image_url("opengraph/pricing.png") %>
 
-<div class="bg-blue-50">
+<div class="bg-gradient-to-b from-red-600 to-red-900">
   <%= render "hero" %>
   <%= render "plan" %>
   <%= render "stats", stats: @stats %>
