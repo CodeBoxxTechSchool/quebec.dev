@@ -3,10 +3,10 @@ en:
   about:
     show:
       caption: Vincent & Charlton, founders of
-      description: We're Tampa Devs, Tampa Bay's Develper Community. We're building Tampa Devs Talent to make it easier for Tampa Bay's developers to find their next gig while supporting our charitable mission.
+      description: We're Quebec Devs, Quebec Bay's Develper Community. We're building Quebec Devs Talent to make it easier for Quebec Bay's developers to find their next gig while supporting our charitable mission.
       readtime: 1 minute read
       title: About
-      title_og: About Tampa Devs Talent
+      title_og: About Quebec Devs Talent
   activerecord:
     attributes:
       business:
@@ -222,14 +222,14 @@ en:
       create:
         notice: Your request will be approved shortly. Look out for an email from our team soon.
       index:
-        description: Earn 5% recurring commissions for every referral to Tampa Devs Talent. Join the affiliate program today and start earning money while promoting the only nonprofit hiring platform that supports developer communities in Tampa Bay.
-        title: Earn money promoting Tampa Devs Talent
+        description: Earn 5% recurring commissions for every referral to Quebec Devs Talent. Join the affiliate program today and start earning money while promoting the only nonprofit hiring platform that supports developer communities in Quebec Bay.
+        title: Earn money promoting Quebec Devs Talent
       new:
         agreement: I agree to these rules
         submit: Register
         submitting: Registering...
         subtitle: Program rules
-        title: Tampa Devs Talent affiliate program registration
+        title: Quebec Devs Talent affiliate program registration
   blocks:
     create:
       notice: "%{other_recipient} was blocked."
@@ -242,16 +242,16 @@ en:
     show:
       caption: " has been upskilling developers since 2018."
       cta: Learn More
-      description: CodeBoxx Academy is the official bootcamp partner of Tampa Devs Talent.
+      description: CodeBoxx Academy is the official bootcamp partner of Quebec Devs Talent.
       title: Coding Bootcamps
       title_og: Coding Bootcamps
   business_mailer:
     cancel_subscription:
-      subject: Tampa Devs Talent cancellation confirmation
+      subject: Quebec Devs Talent cancellation confirmation
     subscribed:
-      subject: "Your Tampa Devs Talent subscription is live! 🎉 Let's find your perfect match."
+      subject: "Your Quebec Devs Talent subscription is live! 🎉 Let's find your perfect match."
     welcome:
-      subject: "Welcome to Tampa Devs Talent 👋"
+      subject: "Welcome to Quebec Devs Talent 👋"
   businesses:
     admin_component:
       confirm_make_invisible: Are you sure you want to make this business invisible?
@@ -276,7 +276,7 @@ en:
       change_avatar: Upload
       creating: Creating...
       developer_notifications:
-        help_text: Receive daily or weekly email notifications when new developers add their profile to Tampa Devs Talent.
+        help_text: Receive daily or weekly email notifications when new developers add their profile to Quebec Devs Talent.
         legend: Developer notifications
         values:
           daily: Daily
@@ -286,11 +286,11 @@ en:
       notifications:
         title: Email notifications
       personal:
-        help: Information about you, the contact point for your business on Tampa Devs Talent.
+        help: Information about you, the contact point for your business on Quebec Devs Talent.
         title: Personal details
       something_went_wrong: Something went wrong uploading your image, please try again.
       survey_request_notifications:
-        help_text: Help Tampa Devs Talent by receiving short, infrequent surveys about how you use the platform.
+        help_text: Help Quebec Devs Talent by receiving short, infrequent surveys about how you use the platform.
         legend: Survey requests
       updating: Updating...
       your_business_profile: Your business profile
@@ -305,10 +305,10 @@ en:
         description: Congrats on your new hire!
         developer_name: Developer's name
         feedback: Feedback (optional)
-        feedback_help: Please let us know how we can improve Tampa Devs Talent or anything you'd like to share.
+        feedback_help: Please let us know how we can improve Quebec Devs Talent or anything you'd like to share.
         requesting: Requesting...
         submit: Submit
-        title: Did you hire through Tampa Devs Talent?
+        title: Did you hire through Quebec Devs Talent?
     invisible_banner_component:
       cta: Contact Us
       title_html: Your business profile is invisible. Please contact <a href="mailto:jobs@tampadevs.com">jobs@tampadevs.com</a> to reinstate your access.
@@ -369,9 +369,9 @@ en:
     celebration_promotion:
       subject: How's your conversation going with %{contact} at %{company}?
     first_message:
-      subject: Tips on responding to your first message on Tampa Devs Talent
+      subject: Tips on responding to your first message on Quebec Devs Talent
     welcome:
-      subject: "Welcome to Tampa Devs Talent 👋"
+      subject: "Welcome to Quebec Devs Talent 👋"
   developers:
     admin_component:
       confirm_make_invisible: Are you sure you want to make this developer invisible?
@@ -395,9 +395,9 @@ en:
         success: Thank you! Our team will reach out to you soon.
       new:
         company_name: Company name
-        description: Congrats on your new job! Tell us about it and we'll send you a custom Tampa Devs Talent celebration package, completely free.
+        description: Congrats on your new job! Tell us about it and we'll send you a custom Quebec Devs Talent celebration package, completely free.
         feedback: Feedback (optional)
-        feedback_help: Please let us know how we can improve Tampa Devs Talent or anything you'd like to share.
+        feedback_help: Please let us know how we can improve Quebec Devs Talent or anything you'd like to share.
         mailing_address: Mailing address
         mailing_address_help: Where can we send your celebration package?
         request_package: Request package

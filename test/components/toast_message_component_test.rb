@@ -8,7 +8,7 @@ class ToastMessageComponentTest < ViewComponent::TestCase
       c.message { "Operation successful" }
     end
 
-    expect_to_be_color(color: :blue)
+    expect_to_be_color(color: :red)
     assert_no_selector("h3")
     assert_selector("svg")
     assert_selector("div", text: "Operation successful")
@@ -66,7 +66,7 @@ class ToastMessageComponentTest < ViewComponent::TestCase
     assert_selector(".bg-#{color}-50")
     if color == :red
       assert_selector(".text-#{color}-700")
-    elsif color == :blue
+    elsif color == :red
       assert_selector(".text-#{color}-950")
     end
   end

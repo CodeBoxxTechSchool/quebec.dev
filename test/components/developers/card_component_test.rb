@@ -39,14 +39,14 @@ module Developers
 
     test "highlights the border if featured and the option is set" do
       render_inline(CardComponent.new(developer: @developer, highlight_featured: true))
-      assert_no_selector "a.border-l-4.border-blue-400"
+      assert_no_selector "a.border-l-4.border-red-400"
 
       @developer.feature!
       render_inline(CardComponent.new(developer: @developer, highlight_featured: false))
-      assert_no_selector "a.border-l-4.border-blue-400"
+      assert_no_selector "a.border-l-4.border-red-400"
 
       render_inline(CardComponent.new(developer: @developer, highlight_featured: true))
-      assert_selector "a.border-l-4.border-blue-400"
+      assert_selector "a.border-l-4.border-red-400"
     end
 
     test "renders recently added badge if developer is new in last 7 days" do

@@ -3,10 +3,10 @@ require "test_helper"
 class SortButtonComponentTest < ViewComponent::TestCase
   test "enabled renders more prominently" do
     render_inline new_component(active: false)
-    assert_selector "button.text-blue-950"
+    assert_selector "button.text-red-950"
 
     render_inline new_component(active: true)
-    assert_selector "button.font-medium.text-blue-900"
+    assert_selector "button.font-medium.text-red-900"
   end
 
   test "assigns passed in properties" do

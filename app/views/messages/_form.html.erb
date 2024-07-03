@@ -4,7 +4,7 @@
     <% if current_user.developer %>
     <div class="py-2 flex space-x-4 justify-end items-center">
       <div class="flex text-sm">
-        <p class="text-blue-800"><%= t(".celebration_package_reminder_html") %></p>
+        <p class="text-red-800"><%= t(".celebration_package_reminder_html") %></p>
       </div>
     </div>
     <% end %>
@@ -14,8 +14,8 @@
   <% if local_assigns[:terms] %>
     <div class="py-4 flex space-x-4 justify-between items-center">
       <div class="flex space-x-2">
-        <%= form.check_box :hiring_fee_agreement, class: "focus:ring-blue-500 h-4 w-4 text-blue-950 border-gray-300 rounded mt-1" %>
-        <span class="text-sm text-blue-950">
+        <%= form.check_box :hiring_fee_agreement, class: "focus:ring-red-500 h-4 w-4 text-red-950 border-gray-300 rounded mt-1" %>
+        <span class="text-sm text-red-950">
           <%= form.label :hiring_fee_agreement, t(".hiring_fee_agreement"), required: true %>
 
           <% if HiringAgreements::Term.active? %>
@@ -30,7 +30,7 @@
   <% else %>
     <div class="py-4 flex space-x-4 justify-end items-center">
       <div class="hidden sm:block shrink-0">
-        <div data-controller="keyboard-shortcut" data-keyboard-shortcut-visibility-class="hidden" class="hidden text-xs text-blue-950 font-semibold flex space-x-2 items-baseline">
+        <div data-controller="keyboard-shortcut" data-keyboard-shortcut-visibility-class="hidden" class="hidden text-xs text-red-950 font-semibold flex space-x-2 items-baseline">
           <span data-keyboard-shortcut-target="mac" class="hidden font-mono">&#x2318</span>
           <span data-keyboard-shortcut-target="windows" class="hidden font-mono">Ctrl</span>
           <span class="font-mono"> + Enter</span>

@@ -113,9 +113,7 @@
     </div>
 
     <div class="container mx-auto">
-      <div class="grid grid-cols-1 sm:grid-cols-3 sm:grid-rows-2 gap-4 gap-x-0">
-        <%= render Developers::CardComponent.with_collection(@developers) %>
-      </div>
+      <iframe class="h-[10000px]" id="next-event-widget" src="http://localhost:8787/widget/events" frameborder="0" scrolling="no"></iframe>
     </div>
 
     <div class="mt-8 text-right mr-2 lg:mr-0 flex items-center justify-center pb-32 pt-10">
@@ -186,3 +184,10 @@
     </div>
   </div>
 </section>
+
+<script>
+  // Adjust the iframe height to fit its content
+  window.onload = function() {
+    window.parent.document.getElementById('next-event-widget').style.height = 550 + 'px';
+  };
+</script>

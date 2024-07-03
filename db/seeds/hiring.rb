@@ -7,7 +7,7 @@ Developers::CelebrationPackageRequest.find_or_create_by!(developer:) do |form|
   form.position = "Rails Developer"
   form.start_date = Date.today
   form.employment_type = :full_time_employment
-  form.feedback = "Keep up the great work with Tampa Devs Talent!"
+  form.feedback = "Keep up the great work with Quebec Devs Talent!"
   form.save_and_notify
 end
 

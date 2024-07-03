@@ -9,7 +9,7 @@ module Admin
 
     def call
       tag.div class: "flex justify-center mt-2" do
-        link_to title, path, class: "text-sm font-medium text-blue-950 hover:text-blue-950"
+        link_to title, path, class: "text-sm font-medium text-red-950 hover:text-red-950"
       end
     end
   end

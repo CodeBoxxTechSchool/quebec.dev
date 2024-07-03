@@ -9,7 +9,7 @@ module Developers
     test "renders feature badge if the developer profile is featured" do
       @developer.featured_at = Time.now
       render_inline BadgesComponent.new(@developer)
-      assert_selector("span[class~='bg-blue-100']")
+      assert_selector("span[class~='bg-red-100']")
       assert_text "Featured"
 
       @developer.featured_at = 2.weeks.ago

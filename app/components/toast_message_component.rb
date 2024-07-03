@@ -6,7 +6,7 @@ class ToastMessageComponent < ApplicationComponent
 
   attr_reader :icon, :color, :messages_tag
 
-  def initialize(icon:, color: :blue, messages_tag: :div)
+  def initialize(icon:, color: :red, messages_tag: :div)
     @icon = icon
     @color = color
     @messages_tag = messages_tag

@@ -20,7 +20,7 @@ module Admin
       private
 
       def classes
-        "bg-white py-2 px-4 border border-gray-300 rounded-md shadow-sm text-sm font-medium text-blue-950 hover:bg-blue-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500"
+        "bg-white py-2 px-4 border border-gray-300 rounded-md shadow-sm text-sm font-medium text-red-950 hover:bg-red-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-red-500"
       end
     end
   end
