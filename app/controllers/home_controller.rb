@@ -4,7 +4,7 @@ class HomeController < ApplicationController
       .visible
       .includes(:role_type).with_attached_avatar
       .limit(6)
-      # .actively_looking.newest_first
+    # .actively_looking.newest_first
 
     pp '##################'
     pp @developers.count
