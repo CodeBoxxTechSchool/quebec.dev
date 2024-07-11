@@ -12,6 +12,10 @@ body {
   overflow:hidden;
 }
 
+.bg-orange-50 {
+  background-color: rgb(251 243 234 / var(--tw-bg-opacity));
+}
+
 @media (max-width: 800px) {
   #next-event-widget {
     height: 450px !important;

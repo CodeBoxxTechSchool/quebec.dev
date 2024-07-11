@@ -6,24 +6,23 @@
   </div>
 </section>
 
-<section class="bg-gradient-to-b from-red-600 to-red-900">
-  <div class="max-w-7xl mx-auto">
-    <div class="flex text-white p-6 justify-center items-center flex-col">
-      <div class="pt-10">
-        <%= image_tag 'dot.png' %>
-      </div>
-      <div class="pt-5">
-        <h2 class="text-2xl font-bold mb-4"><%= t(".developers_heading") %></h2>
-      </div>
+<section class="flex justify-center flex-col items-center relative h-auto px-12 py-24 bg-gradient-to-b from-red-600 to-red-900">
+  <!--  all headers structure -->
+  <div class="container mx-auto relative z-10 mb-4">
+    <div class="flex justify-center items-center flex-col">
+      <%= image_tag "dot.png", alt: "Logo", class: "relative h-12 w-12 p-0" %>
+      <h2 class="w-full text-2xl text-white font-bold text-center my-3"><%= t(".developers_heading") %></h2>
     </div>
-
+  </div>
+  <!--  end of headers structure -->
+  <div class="max-w-7xl mx-auto">
     <div class="container mx-auto">
       <div class="grid grid-cols-1 sm:grid-cols-3 sm:grid-rows-2 gap-4 gap-x-0">
         <%= render Developers::CardComponent.with_collection(@developers) %>
       </div>
     </div>
 
-    <div class="mt-8 text-right mr-2 lg:mr-0 flex items-center justify-center pb-32 pt-10">
+    <div class="mt-8 text-right mr-2 lg:mr-0 flex items-center justify-center pt-10">
       <button class="border-white border px-10 py-2 text-white">
         Voir tous les candidats
       </button>
@@ -31,59 +30,67 @@
   </div>
 </section>
 
-<section class="flex bg-black text-white p-6 justify-center items-center flex-col">
+<section class="flex justify-center flex-col items-center relative h-auto px-12 py-12 bg-black text-white">
   <div>
-    <%= image_tag 'dot.png' %>
+    <%= image_tag "dot.png", alt: "Logo", class: "relative h-12 w-12 p-0" %>
   </div>
   <div class="pt-5">
     <h2 class="text-2xl font-bold mb-4">Votre futur candidat est ici.</h2>
   </div>
 </section>
 
-<section class="bg-gray-100 text-gray-800 flex relative h-[1000px]">
+<section class="bg-orange-50 text-gray-800 relative h-auto px-12 py-24">
+  <div class="absolute top-0 right-0 w-full sm:w-1/2 h-full bg-orange-100 z-0"></div>
+  <!--  all headers structure -->
+  <div class="container mx-auto relative z-10 mb-4">
+    <div class="flex justify-center items-center flex-col">
+      <%= image_tag "dot.png", alt: "Logo", class: "relative h-12 w-12 p-0" %>
+      <h2 class="w-full text-2xl font-bold text-center my-3">À propos de quebec.dev</h2>
+    </div>
+  </div>
+  <!--  end of headers structure -->
+  <div class="container mx-auto relative w-full flex flex-col sm:flex-row z-10">
   <!-- Left Column -->
-  <div class="flex w-1/2 bg-orange-50 p-20 items-center justify-center">
-    <div class="w-2/3 ml-auto w-[475px] h-[615px]">
-      <h2 class="text-2xl font-bold mb-4">À propos de quebec.dev</h2>
-      <p class="mb-4">
-        Lorem ipsum dolor sit amet consectetur. Positum in mauris eleifend tempus viverra et in sed.
-        Enim amet in viverra adipiscing pellentesque. Donec consequat egestas sit amet.
-        Pellentesque luctus sit facilisi aliquam. Nec risus nunc ultrices diam gravida sit nec.
-        Mi vitae eu nec nec. Quis vel ullamcorper sed risus dictum ornare nec. Egestas dolor porttitor nunc.
-        Duis eleifend ipsum aliquam faucibus turpis ultrices.
-      </p>
-      <p class="mb-4">
-        Tincidunt in et platea sapien gravida. Vivamus erat sed amet non ultrices vel ultricies.
-        Enim eu ornare velit nec non enim rhoncus. Lorem ipsum dolor sit amet adipiscing lorem.
-        Tincidunt proin facilisi elementum et mi arcu. Sapien gravida facilisis massa vulputate integer
-        egestas at ultricies risus. Euismod quam egestas eget augue tempus nec.
-      </p>
-      <p>
-        Tincidunt in et platea sapien gravida. Vivamus erat sed amet non ultrices vel ultricies.
-        Enim eu ornare velit nec non enim rhoncus. Lorem ipsum dolor sit amet adipiscing lorem.
-        Tincidunt proin facilisi elementum et mi arcu. Sapien gravida facilisis massa vulputate integer
-        egestas at ultricies risus. Euismod quam egestas eget augue tempus nec.
-      </p>
+    <div class="flex flex-1 items-center justify-center">
+      <div class="w-full h-auto">
+        <p class="mb-4">
+          Lorem ipsum dolor sit amet consectetur. Positum in mauris eleifend tempus viverra et in sed.
+          Enim amet in viverra adipiscing pellentesque. Donec consequat egestas sit amet.
+          Pellentesque luctus sit facilisi aliquam. Nec risus nunc ultrices diam gravida sit nec.
+          Mi vitae eu nec nec. Quis vel ullamcorper sed risus dictum ornare nec. Egestas dolor porttitor nunc.
+          Duis eleifend ipsum aliquam faucibus turpis ultrices.
+        </p>
+        <p class="mb-4">
+          Tincidunt in et platea sapien gravida. Vivamus erat sed amet non ultrices vel ultricies.
+          Enim eu ornare velit nec non enim rhoncus. Lorem ipsum dolor sit amet adipiscing lorem.
+          Tincidunt proin facilisi elementum et mi arcu. Sapien gravida facilisis massa vulputate integer
+          egestas at ultricies risus. Euismod quam egestas eget augue tempus nec.
+        </p>
+        <p>
+          Tincidunt in et platea sapien gravida. Vivamus erat sed amet non ultrices vel ultricies.
+          Enim eu ornare velit nec non enim rhoncus. Lorem ipsum dolor sit amet adipiscing lorem.
+          Tincidunt proin facilisi elementum et mi arcu. Sapien gravida facilisis massa vulputate integer
+          egestas at ultricies risus. Euismod quam egestas eget augue tempus nec.
+        </p>
+      </div>
     </div>
-  </div>
   <!-- Right Column -->
-  <div class="w-1/2 flex items-center justify-center bg-orange-100 p-10">
-    <div class="mr-auto">
-      <%= image_tag "table.png", alt: 'Table with laptop and rose' %>
+    <div class="w-full flex flex-1 items-center justify-center p-10">
+        <%= image_tag "table.png", alt: 'Table with laptop and rose' %>
     </div>
-  </div>
-  <!-- "Middle Column" -->
-  <div class="absolute inset-0 flex mt-20 justify-center">
-    <%= image_tag "dot.png", alt: "Logo", class: "h-12 w-12" %>
   </div>
 </section>
 
-<section class="flex bg-black text-white p-6 justify-center items-center flex-col">
-  <div class="mt-10">
-    <%= image_tag 'dot.png' %>
+<section class="flex bg-black text-white p-6 justify-center items-center flex-col relative h-auto px-12 py-24">
+  <!--  all headers structure -->
+  <div class="container mx-auto relative z-10 mb-4">
+    <div class="flex justify-center items-center flex-col">
+      <%= image_tag "dot.png", alt: "Logo", class: "relative h-12 w-12 p-0" %>
+      <h2 class="w-full text-2xl font-bold text-center my-3">Rejoindre la communauté de développeurs</h2>
+    </div>
   </div>
+  <!--  end of headers structure -->
   <div class="pt-5 text-center w-[1100px]">
-    <h2 class="text-2xl font-bold mb-4">Rejoindre la communauté de développeurs</h2>
     <p class="text-left mb-4">Tu es un développeur à la recherche de nouveaux défis ou tout simplement à la recherche DU
       poste parfait pour
       toi?
@@ -97,91 +104,87 @@
       profile
       développeur.</p>
 
-    <button class="bg-orange-50 text-black p-2 px-10 m-5 w-[400px]">S’inscrire</button>
+    <button class="bg-orange-50 text-black p-2 px-10 m-5 w-[400px] my-9">S’inscrire</button>
   </div>
 </section>
 
-<section class="bg-gradient-to-b from-red-600 to-red-900">
-  <div class="max-w-7xl mx-auto">
-    <div class="flex text-white p-6 justify-center items-center flex-col">
-      <div class="pt-10">
-        <%= image_tag 'dot.png' %>
-      </div>
-      <div class="pt-5">
-        <h2 class="text-2xl font-bold mb-4"><%= t(".events_heading") %></h2>
-      </div>
+<section class="bg-gradient-to-b from-red-600 to-red-900 relative h-auto px-12 py-24">
+  <!--  all headers structure -->
+  <div class="container mx-auto relative z-10 mb-4">
+    <div class="flex justify-center items-center flex-col">
+      <%= image_tag "dot.png", alt: "Logo", class: "relative h-12 w-12 p-0" %>
+      <h2 class="w-full text-2xl text-white font-bold text-center my-3"><%= t(".events_heading") %></h2>
     </div>
-
+  </div>
+  <!--  end of headers structure -->
+  <div class="max-w-7xl mx-auto">
     <div class="container mx-auto">
       <iframe class="h-[10000px]" id="next-event-widget" src="http://localhost:8787/widget/events" frameborder="0" scrolling="no"></iframe>
     </div>
 
-    <div class="mt-8 text-right mr-2 lg:mr-0 flex items-center justify-center pb-32 pt-10">
-      <button class="border-white border px-10 py-2 text-white">
+    <div class="mt-4 lg:mr-0 flex items-center justify-center pb-32 pt-10">
+      <button class="border-white border px-10 m-2 py-2 text-white">
         Voir tous les candidats
       </button>
-      <button class="px-10 py-2 text-black ml-2 bg-orange-50 ">
+      <button class="px-10 py-2 text-black m-2 bg-orange-50 ">
         Proposer un événement
       </button>
     </div>
   </div>
 </section>
 
-<section class="flex bg-black text-white p-6 justify-center items-center flex-col">
-  <div class="mt-10">
-    <%= image_tag 'dot.png' %>
+<section class="flex bg-black text-white justify-center items-center flex-col relative h-auto px-12 py-24">
+  <!--  all headers structure -->
+  <div class="container mx-auto relative z-10 mb-4">
+    <div class="flex justify-center items-center flex-col">
+      <%= image_tag "dot.png", alt: "Logo", class: "relative h-12 w-12 p-0" %>
+      <h2 class="w-full text-2xl text-white font-bold text-center my-3">Nos Partenaires</h2>
+    </div>
   </div>
+  <!--  end of headers structure -->
   <div class="pt-5 text-center w-[1100px]">
-    <h2 class="text-2xl font-bold mb-4">Nos Partenaires</h2>
-    <div class="flex flex-row space-x-10 items-center justify-center my-10">
-      <%= image_tag 'codeboxx.png', class: "h-[60px]" %>
-      <%= image_tag 'desjardins.png', class: "h-[60px]" %>
-      <%= image_tag 'cciq.png', class: "h-[60px]" %>
+    <div class="flex flex-col sm:flex-row space-x-12 items-center justify-center my-10">
+      <%= image_tag 'codeboxx.png', class: "h-[50px]" %>
+      <%= image_tag 'desjardins.png', class: "h-[50px]" %>
+      <%= image_tag 'cciq.png', class: "h-[70px]" %>
     </div>
   </div>
 </section>
 
 
-<section class="bg-gray-100 text-gray-800 flex relative h-[850px]">
-  <!-- Left Column -->
-  <div class="flex w-1/2 bg-orange-50 p-20 items-center justify-center">
-  </div>
-  <!-- Right Column -->
-  <div class="w-1/2 flex items-center justify-center bg-orange-100 p-10">
-  </div>
-  <div class="absolute inset-x-0 top-0 flex mt-10 justify-center grid-cols-1 gap-4">
-    <div class="relative">
-      <div class="flex inset-x-0 mb-10 items-center justify-center">
-        <%= image_tag "dot.png", alt: "Logo", class: "h-12 w-12" %>
-      </div>
-      <div class="inset-x-0 text-center">
-        <h2>Contactez-Nous</h2>
-      </div>
-      <div class="inset-x-0">
-        <form class="space-y-4">
-          <div class="grid grid-cols-2 gap-4">
-            <div class="col-span-2">
-              <input type="text" placeholder="Nom" class="p-4 border border-gray-300 rounded w-full">
-            </div>
-            <div class="">
-              <input type="text" placeholder="Entreprise" class="p-4 border border-gray-300 rounded">
-            </div>
-            <div class="">
-              <input type="email" placeholder="Courriel" class="p-4 border border-gray-300 rounded">
-            </div>
-            <div class="col-span-2">
-              <input type="text" placeholder="Sujet" class="p-4 border border-gray-300 rounded w-full">
-            </div>
-            <div class="col-span-2">
-              <textarea placeholder="Message" class="p-4 border border-gray-300 rounded w-full h-32"></textarea>
-            </div>
-          </div>
-          <div class="text-center">
-            <button type="submit" class="bg-black text-white py-2 px-4 rounded">Soumettre</button>
-          </div>
-        </form>
-      </div>
+<section class="flex bg-orange-50 text-gray-800 justify-center items-center flex-col relative h-auto px-12 py-24">
+  <div class="absolute top-0 right-0 w-full sm:w-1/2 h-full bg-orange-100 z-0"></div>
+  <!--  all headers structure -->
+  <div class="container mx-auto relative z-10 mb-4">
+    <div class="flex justify-center items-center flex-col">
+      <%= image_tag "dot.png", alt: "Logo", class: "relative h-12 w-12 p-0" %>
+      <h2 class="w-full text-2xl font-bold text-center my-3">Contactez-Nous</h2>
     </div>
+  </div>
+  <!--  end of headers structure -->
+  <div class="container relative flex justify-center mx-auto z-10">
+    <form class="space-y-4 w-full sm:w-1/2">
+      <div class="grid grid-cols-2 gap-4">
+        <div class="col-span-2">
+          <input type="text" placeholder="Nom" class="p-4 border border-gray-300 rounded-none w-full">
+        </div>
+        <div class="">
+          <input type="text" placeholder="Entreprise" class="p-4 border border-gray-300 rounded-none w-full">
+        </div>
+        <div class="">
+          <input type="email" placeholder="Courriel" class="p-4 border border-gray-300 rounded-none w-full">
+        </div>
+        <div class="col-span-2">
+          <input type="text" placeholder="Sujet" class="p-4 border border-gray-300 rounded-none w-full">
+        </div>
+        <div class="col-span-2">
+          <textarea placeholder="Message" class="p-4 border border-gray-300 rounded-none w-full h-32"></textarea>
+        </div>
+      </div>
+      <div class="text-center">
+        <button type="submit" class="bg-black text-white py-2 px-4 rounded-none">Soumettre</button>
+      </div>
+    </form>
   </div>
 </section>
 
