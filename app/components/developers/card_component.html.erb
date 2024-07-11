@@ -1,35 +1,40 @@
-<div class="bg-white hover:bg-red-50 flex sm:space-x-8 w-[395px] h-[184px]">
-  <div class="max-w-lg w-full bg-white overflow-hidden">
-    <div class="grid grid-cols-12 h-full">
-      <div class="col-span-3">
-        <%= render AvatarComponent.new(avatarable: developer, variant: :medium, classes: 'h-[154px]') %>
-        <%= button_to 'ENGAGER', developer, method: :get, class: "bg-red-600 text-white h-[30px] w-full" %>
-      </div>
-      <div class="col-span-9">
-        <div class="grid grid-rows-12">
-          <div class="h-7 text-xs space-x-10 grid-rows-1 bg-orange-50 p-1.5">
-            <div class="flex flex-row">
-              <p class="mr-auto">RECHERCHE ACTIVEMENT</p>
-              <%= image_tag 'info-circle.png' %>
+<div class="bg-white hover:bg-red-50 flex items-stretch m-2">
+  <div class="w-full bg-white relative">
+    <div class="flex flex-col justify-between relative h-full">
+      <div class="flex flex-col justify-center justify-start">
+
+        <div class="flex flex-row">
+          <div class="relative w-1/4 max-h-[140px] flex justify-center items-center overflow-hidden">
+            <%= render AvatarComponent.new(avatarable: developer, variant: :medium, classes: 'h-full w-full absolute top-0 left-0') %>
+          </div>
+          <div class="w-3/4">
+            <div class="grid grid-rows-12">
+              <div class="flex-initial w-full h-7 text-xs space-x-10 grid-rows-1 bg-orange-50 p-1.5">
+                <div class="flex flex-row justify-between">
+                  <p class="text-left">RECHERCHE ACTIVEMENT</p>
+                  <div class="flex flex-row items-center">
+                    <%= image_tag 'heart.png', class: 'my-0 mx-1' %>
+                    <%= image_tag 'info-circle.png', class: 'my-0 mx-1' %>
+                  </div>
+                </div>
+              </div>
+              <div class="flex flex-row text-[8px] px-2 pt-1 grid-rows-1">
+                <p class="mr-auto">Favorise le Télétravail</p>
+                <p class="">Ville de Québec</p>
+              </div>
+              <div class="grid-rows-4 text-xs p-2 max-h-[42px] overflow-hidden text-ellipsis">Développeur sénior de 20 ans d’expérience en React Native et .net
+              </div>
+              <div class="grid-rows-4 text-[10px] p-2 max-h-[67px] overflow-hidden text-ellipsis">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc pellentesque quam in ullamcorper scelerisque. Vestibulum mollis efficitur fermentum. Nulla sagittis.
+              </div>
             </div>
           </div>
-          <div class="flex flex-row text-[8px] px-2 py-0 grid-rows-1">
-            <p class="mr-auto">Favorise le Télétravail</p>
-            <p class="">Ville de Québec</p>
-          </div>
-          <div class="grid-rows-4 text-xs p-1.5">Développeur sénior de 20 ans d’expérience en React Native et .net, recherche un poste
-            permanent. Que ce soit sur le volet du temps...
-          </div>
-          <div class="grid-rows-4 text-[10px] p-1.5">My passion for coding ignited during my college days when I discovered the power of Java.
-            I...
-          </div>
-          <div class="flex flex-row">
+        </div>
+        <div class="w-100 flex flex-row py-1">
             <%#= render Developers::BadgesComponent.new(developer) %>
             <%= render Developers::SpecialtiesComponent.new(developer.specialties) %>
-            <%= image_tag 'heart.png', class: 'ml-auto p-2' %>
-          </div>
         </div>
       </div>
+      <%= button_to 'ENGAGER', developer, method: :get, class: "bg-red-600 text-white h-[30px] w-full" %>
     </div>
   </div>
 </div>

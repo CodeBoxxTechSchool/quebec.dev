@@ -6,9 +6,9 @@ class HomeController < ApplicationController
       .limit(6)
     # .actively_looking.newest_first
 
-    pp '##################'
+    pp "##################"
     pp @developers.count
-    pp '##################'
+    pp "##################"
     Analytics::Event.home_page_viewed(current_user, cookies)
   end
 end
