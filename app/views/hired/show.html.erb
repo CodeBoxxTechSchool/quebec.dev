@@ -1,8 +1,8 @@
 <%= open_graph_tags title: t(".title"), description: t(".description"), image: image_url("celebration.png") %>
 
-<div class="overflow-hidden max-w-3xl mx-auto">
+<div class="container overflow-hidden overflow-hidden max-w-5xl py-24 mx-auto">
   <!-- Header -->
-  <div class="pt-16 lg:pt-24 pl-4 pr-8 sm:px-6 lg:px-8">
+  <div class="my-12">
     <div class="relative">
       <h1 class="text-3xl font-bold tracking-tight text-red-900 sm:text-4xl sm:tracking-tight lg:text-5xl lg:tracking-tight"><%= t(".title") %></h1>
       <p class="mt-6 text-xl text-red-950"><%= t(".description") %></p>
@@ -10,10 +10,10 @@
   </div>
 
   <!-- Celebration image -->
-  <%= image_tag "celebration.png", alt: t(".image_alt"), class: "mt-8 lg:mt-16 md:rounded-lg md:shadow-md" %>
+<!--  <%= image_tag "celebration.png", alt: t(".image_alt"), class: "mx-12 md:rounded-lg w-full" %>-->
 
   <!-- Package details -->
-  <section class="mt-8 lg:mt-16 text-lg">
+  <section class="my-12 text-lg">
     <p class="text-red-950 max-w-3xl pl-4 pr-8 sm:px-6 lg:px-8">You'll get:</p>
     <div class="mt-3 ml-4 text-red-950">
       <ul role="list" class="list-disc pl-5 space-y-2">
@@ -24,7 +24,7 @@
   </section>
 
   <!-- Eligibility requirements -->
-  <section class="mt-16 lg:mt-24">
+  <section class="my-12">
     <p class="text-red-950 text-lg max-w-3xl pl-4 pr-8 sm:px-6 lg:px-8">Please see the details below to check if you're eligible:</p>
     <div class="md:rounded-md bg-red-100 p-5 mt-5">
       <div class="flex">
@@ -47,9 +47,9 @@
   </section>
 
   <!-- Form CTA -->
-  <section class="text-red-950 text-lg max-w-3xl pl-4 pr-8 sm:px-6 lg:px-8 mt-16 lg:mt-24">
+  <section class="text-red-950 text-lg max-w-5xl my-12">
     <p>Please apply for your celebration package using this form. It takes &lt;3 minutes.</p>
-    <%= link_to new_developers_celebration_package_request_path, class: "inline-flex items-center px-6 py-3 border border-transparent text-base font-medium text-white bg-red-600 hover:bg-red-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 my-8" do %>
+    <%= link_to new_developers_celebration_package_request_path, class: "secondary-font inline-flex items-center px-6 py-3 border border-transparent text-base font-medium text-white bg-red-600 hover:bg-red-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 my-8" do %>
       <%= inline_svg_tag "icons/outline/pencil_alt.svg", class: "-ml-1 mr-3 h-5 w-5", aria_hidden: true %>
       Apply for your celebration package
     <% end %>
@@ -57,7 +57,7 @@
   </section>
 
   <!-- More info -->
-  <section class="my-16 lg:my-24">
+  <section class="my-12">
     <div class="md:rounded-md bg-red-100 p-5 mt-5">
       <div class="flex">
         <div class="flex-shrink-0">
