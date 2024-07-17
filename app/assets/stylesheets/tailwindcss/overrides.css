@@ -6,6 +6,10 @@ h1, h2, h3, button, nav a {
   font-family: "Montserrat", sans-serif;
 }
 
+.secondary-font {
+  font-family: "Montserrat", sans-serif;
+}
+
 button {
   font-weight: 500;
 }
