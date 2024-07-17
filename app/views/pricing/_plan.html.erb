@@ -2,7 +2,7 @@
   <div class="relative">
     <div class="absolute inset-0 h-1/3 bg-red-50"></div>
     <div class="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-      <div class="mx-auto max-w-lg overflow-hidden rounded-lg shadow-lg lg:flex lg:max-w-none">
+      <div class="mx-auto max-w-lg overflow-hidden shadow-lg lg:flex lg:max-w-none">
         <div class="flex-1 bg-white px-6 py-8 lg:p-12">
           <h3 class="text-2xl font-bold text-red-900 sm:text-3xl sm:tracking-tight"><%= t(".title_html") %></h3>
           <p class="mt-6 text-base text-red-950 max-w-prose"><%= t(".description") %></p>
@@ -30,8 +30,8 @@
             <a href="#hiring-fee" class="font-medium text-red-950 underline"><%= t(".hiring_fee") %></a>
           </p>
           <div class="mt-6">
-            <div class="rounded-md shadow">
-              <%= render "pricing/purchase_button", title: t(".cta_monthly"), plan: :full_time, classes: "block w-full flex items-center justify-center rounded-md border border-transparent bg-red-800 px-5 py-3 text-base font-medium text-white hover:bg-red-900" %>
+            <div class="">
+              <%= render "pricing/purchase_button", title: t(".cta_monthly"), plan: :full_time, classes: "block w-full flex items-center justify-center border border-transparent bg-red-600 px-5 py-3 text-base font-medium text-white hover:bg-red-700" %>
             </div>
           </div>
           <div class="mt-10 flex items-center justify-center text-5xl font-bold tracking-tight text-red-900">
@@ -42,8 +42,8 @@
             <a href="#hiring-fee" class="font-medium text-red-950 underline"><%= t(".hiring_fee") %></a>
           </p>
           <div class="mt-6">
-            <div class="rounded-md shadow">
-              <%= render "pricing/purchase_button", title: t(".cta_annual"), plan: :annual, classes: "block w-full flex items-center justify-center rounded-md border border-transparent bg-red-800 px-5 py-3 text-base font-medium text-white hover:bg-red-900" %>
+            <div class="">
+              <%= render "pricing/purchase_button", title: t(".cta_annual"), plan: :annual, classes: "block w-full flex items-center justify-center border border-transparent bg-red-600 px-5 py-3 text-base font-medium text-white hover:bg-red-700" %>
             </div>
           </div>
         </div>

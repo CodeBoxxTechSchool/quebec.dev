@@ -1,12 +1,12 @@
 <%= open_graph_tags title: t(".title"), description: t(".description"), image: image_url("opengraph/affiliates.png") %>
 
-<div class="bg-white px-6 py-8 md:py-16 lg:px-8">
-  <div class="mx-auto max-w-3xl text-base leading-7 text-red-950">
+<div class="container overflow-hidden max-w-5xl py-24 mx-auto">
+  <div class="text-base leading-7 text-red-950">
     <!-- Hero -->
     <h1 class="mt-2 text-3xl font-bold tracking-tight text-red-900 sm:text-4xl"><%= t(".title") %></h1>
     <p class="mt-6 text-xl leading-8"><%= t(".description") %></p>
     <div class="mt-10 flex">
-      <%= link_to "Sign up for an account", new_affiliate_path, class: "rounded-md bg-red-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-red-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600" %>
+      <%= link_to "Sign up for an account", new_affiliate_path, class: "bg-red-600 px-3.5 py-3 text-sm font-semibold text-white hover:bg-red-700 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600" %>
     </div>
 
     <!-- Details -->
@@ -89,10 +89,10 @@
     </div>
 
     <!-- Footer CTA -->
-    <div class="mx-auto max-w-3xl py-24">
+    <div class="py-24">
       <h2 class="text-3xl font-bold tracking-tight text-red-900 sm:text-4xl">Ready to partner <span class="block sm:inline-block">with Quebec Dev?</span></h2>
       <div class="mt-8">
-        <%= link_to "Sign up for an account", new_affiliate_path, class: "rounded-md bg-red-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-red-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600" %>
+        <%= link_to "Sign up for an account", new_affiliate_path, class: "bg-red-600 px-3.5 py-3 text-sm font-semibold text-white hover:bg-red-700 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600" %>
       </div>
     </div>
   </div>
