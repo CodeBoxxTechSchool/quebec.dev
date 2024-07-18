@@ -1,7 +1,7 @@
 .hero {
     width: 100%;
-    height: 100vh;
-    background-image: url("/images/splash-header-lev1.png");
+    height: 70vh;
+    background-image: url("/images/splash-header.png");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -13,7 +13,6 @@
 }
 
 .hero:before {
-    content: "";
     position: fixed;
     width: 100%;
     height: 100%;
@@ -22,6 +21,17 @@
     background-repeat: no-repeat;
     background-position: center;
     z-index: -1;
+}
+
+.hero:after {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: url("/images/splash-header-lev2.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    z-index: 3;
 }
 
 .hero .container {
@@ -34,11 +44,23 @@
     font-size: 2em;
     line-height: 1em;
     width: 100%;
+    padding: 25px;
+    margin-top: 50vh;
+    margin-bottom: 0;
 }
 
 @media screen(sm) {
+    .hero {
+        height: 100vh;
+        background-image: url("/images/splash-header-lev3.png");
+    }
+    .hero:before, .hero:after {
+        content: "";
+    }
     .hero h2 {
-        font-size: 3em;
-        width: 45%;
+        font-size: 4em;
+        width: 38%;
+        margin-top: 0;
+        margin-bottom: 100px;
     }
 }
