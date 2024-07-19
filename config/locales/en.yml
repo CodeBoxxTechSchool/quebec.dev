@@ -402,7 +402,7 @@ en:
         mailing_address_help: Where can we send your celebration package?
         request_package: Request package
         requesting: Requesting...
-        title: Did you find a job through Tampa Devs Talent?
+        title: Did you find a job through Quebec Devs?
     count_component:
       cta: Reset filters
       title_html: Showing <span class='font-bold'>%{count}</span> of <span class='font-bold'>%{total}</span>+ developers.
@@ -487,7 +487,7 @@ en:
       empty_state:
         body: Try changing or clearing your filters.
         title: No developers found
-      title: Tampa Bay developers
+      title: Quebec developers
     invisible_banner_component:
       cta: Contact us
       title_html: Your developer profile is invisible. Please contact <a href="mailto:jobs@tampadevs.com">jobs@tampadevs.com</a> to reinstate your access.
@@ -495,8 +495,8 @@ en:
       description: "%{count}+ local developers looking for their next gig. For all stacks, experience levels, and working arrangements, you'll find them all here."
       freelance: freelance
       hire: Hire
-      in_country: in %{country}
-      ruby_on_rails_developers: developers in Tampa Bay
+      in_country: developers in %{country}
+      ruby_on_rails_developers: developers in Quebec
     new_field_component:
       new: New!
     new_fields_component:
@@ -577,8 +577,8 @@ en:
     unauthorized: You don't have access to that.
   hired:
     show:
-      description: Tampa Devs Talent offers a celebration package to congratulate you on getting hired.
-      image_alt: Tampa Devs Talent celebration package
+      description: Quebec Devs offers a celebration package to congratulate you on getting hired.
+      image_alt: Quebec Devs celebration package
       title: Congrats on your new job!
   hiring_agreements:
     signatures:
@@ -589,9 +589,9 @@ en:
         accepting: Accepting...
         agreement: By checking this box I confirm my complete understanding and acceptance of the site terms. I acknowledge that this constitutes a legally binding agreement.
         description: Last updated %{last_updated}
-        questions_html: Questions? Email the Tampa Devs Talent team at <a href="mailto:jobs@tampadevs.com" class="font-medium no-underline hover:underline">jobs@tampadevs.com</a>.
+        questions_html: Questions? Email the Quebec Devs team at <a href="mailto:jobs@tampadevs.com" class="font-medium no-underline hover:underline">jobs@tampadevs.com</a>.
         sign_below: Sign agreement below
-        title: Tampa Devs Talent hiring agreement
+        title: Quebec Devs hiring agreement
     terms:
       show:
         download: Download signed PDF
@@ -599,20 +599,20 @@ en:
         signed_on: Signed on %{date}
   home:
     show:
-      description_og: Tampa Devs Talent empowers local developers and supports social good. Stop combing through job listings, and kick back while companies reach out to you!
+      description_og: Quebec Devs empowers local developers and supports social good. Stop combing through job listings, and kick back while companies reach out to you!
       developers_heading: Actively Looking
       events_heading: Upcoming Events
       get_started: Get started
       learn_more: Learn more
       more: See more developers
-      subtitle_1: Tampa Devs Talent
+      subtitle_1: Quebec Devs
       subtitle_2: empowers local developers and supports social good.
       subtitle_3: Stop combing through job listings and kick back while companies reach out to you!
       hero: The reverse job site for the Quebec developer community
       title_1: The reverse job board for
-      title_2: Tampa Bay's Developer Community
-      title_og: The reverse job board for Tampa Bay's Developer Community
-      turbo_native_title: Tampa Devs Talent
+      title_2: Quebec's Developer Community
+      title_og: The reverse job board for the Quebec Developer Community
+      turbo_native_title: Quebec Devs
   impersonating_banner_component:
     cta: Sign out
     title: Signed in as %{email}
@@ -622,7 +622,7 @@ en:
     form:
       celebration_package_reminder_html: Hired? Don't forget to request a <a class='underline' href="/hired">celebration package</a> for free swag!
       help: Add your message
-      hiring_fee_agreement: I agree to pay Tampa Devs Talent the 5% hiring fee if I hire this developer for a full-time role.
+      hiring_fee_agreement: I agree to pay Quebec Devs the 5% hiring fee if I hire this developer for a full-time role.
       hiring_fee_cta: Questions?
       sending: Sending...
       submit: Send
@@ -689,16 +689,16 @@ en:
         title: "%{developer} may have been hired"
     businesses:
       invisiblize_notification:
-        title: Your profile on Tampa Devs Talent was flagged
+        title: Your profile on Quebec Devs was flagged
     developers:
       invisiblize_notification:
-        title: Your profile on Tampa Devs Talent was flagged
+        title: Your profile on Quebec Devs was flagged
       product_announcement_notification:
-        email_subject: "[Tampa Devs Talent] New feature alert: Developer specialties 🚨"
+        email_subject: "[Quebec Devs] New feature alert: Developer specialties 🚨"
         title: 'New feature alert: Developer specialties'
       profile_reminder_notification:
-        email_subject: Is your Tampa Devs Talent profile up to date?
-        title: Is your Tampa Devs Talent profile up to date?
+        email_subject: Is your Quebec Devs profile up to date?
+        title: Is your Quebec Devs profile up to date?
     index:
       cta: View history
       empty_state:
@@ -707,7 +707,7 @@ en:
       mark_all_as_read: Mark all as read
       title: New notifications
     new_message_notification:
-      email_subject: "%{sender} sent you a message on Tampa Devs Talent"
+      email_subject: "%{sender} sent you a message on Quebec Devs"
       title: "%{sender} sent you a message"
     show:
       notice: Notification marked as read.
@@ -717,18 +717,18 @@ en:
         amount: Amount
         contributions: Contributions
         date: Date
-        description: Tampa Devs Talent directly supports Tampa Devs, a nonprofit software development community dedicated to accelerate access to training and career opportunities in Tampa’s software industry. For free, and for everyone.
+        description: Quebec Devs directly supports Quebec Devs, a nonprofit software development community dedicated to accelerate access to training and career opportunities in Tampa’s software industry. For free, and for everyone.
         external_link: Open in new tab
         open_startup: Open finances
         recipient: Recipient
-        title: Tampa Devs Talent contributions
+        title: Quebec Devs contributions
         to_co2_removal: to CO₂ removal
         to_communities: to Tampa Devs' community programs
     dashboard:
       show:
         contributions: Contributions
         date: Date
-        description: Tampa Devs Talent is an open startup with completely public metrics.
+        description: Quebec Devs is an open startup with completely public metrics.
         expenses: Expenses
         external_link: Open in new tab
         mrr: MRR
@@ -739,23 +739,23 @@ en:
       index:
         amount: Amount
         date: Date
-        description: All expenses associated with Tampa Devs Talent, including things like hosting, fees, and purchases.
+        description: All expenses associated with Quebec Devs, including things like hosting, fees, and purchases.
         expenses: Expenses
         open_startup: Open finances
         source: Source
-        title: Tampa Devs Talent expenses
+        title: Quebec Devs expenses
     revenue:
       index:
         amount: Amount
         date: Date
-        description: All revenue Tampa Devs Talent has generated since launching in June, 2023.
+        description: All revenue Quebec Devs has generated since launching in June, 2023.
         open_startup: Open finances
         revenue: Revenue
         source: Source
-        title: Tampa Devs Talent revenue
+        title: Quebec Devs revenue
   pay_mailer:
     subscription_renewing:
-      subject: Your Tampa Devs Talent subscription renews soon. Have you made a hire?
+      subject: Your Quebec Devs subscription renews soon. Have you made a hire?
   policies:
     privacy:
       show:
@@ -776,32 +776,32 @@ en:
         a_html: Yes! You can cancel your subscription from the Billing link in the user drop-down. You will lose access to all paid features at the end of your billing period.
         q: Can I cancel my subscription at any time?
       developers:
-        a: No. Tampa Devs Talent is free for developers!
-        q: Does Tampa Devs Talent cost anything for developers?
+        a: No. Quebec Devs is free for developers!
+        q: Does Quebec Devs cost anything for developers?
       fee:
-        a_html: If you hire an employee through Tampa Devs Talent you agree to pay a placement fee equal to 5% of their salary.
+        a_html: If you hire an employee through Quebec Devs you agree to pay a placement fee equal to 5% of their salary.
         q: How does the 5% hiring fee work?
       support:
-        a_html: Email the Tampa Devs Talent team with any questions. You can reach us at <a href='mailto:jobs@tampadevs.com' class='underline'>jobs@tampadevs.com</a>.
+        a_html: Email the Quebec Devs team with any questions. You can reach us at <a href='mailto:jobs@tampadevs.com' class='underline'>jobs@tampadevs.com</a>.
         q: Who can I contact for more specific questions?
       title: Frequently asked questions
       warranty:
         a_html: Yes! Tampa Devs offers a 90 day warranty for all hires, and we'll issue a credit equal to the full amount of the original placement fee paid.
         q: Is there a hiring fee warranty?
     hero:
-      description: Directly connect with hundreds of local developers in Tampa Bay looking for their next job.
-      title: Hire developers in Tampa Bay
+      description: Directly connect with hundreds of local developers in Quebec looking for their next job.
+      title: Hire developers in Quebec
     plan:
       cta_annual: Go Annual. Save 16%
       cta_monthly: Go Monthly. Cancel Anytime
-      description: Hire directly from a pool of local developers in Tampa Bay, at all levels of experience.
+      description: Hire directly from a pool of local developers in Quebec, at all levels of experience.
       features:
         climate_html: We donate 1% of revenue to fight climate change. <a style="text-decoration:underline" href="https://climate.stripe.com/nxdibE">Learn more</a>
         email_updates: Email updates of new candidates
         message: Message directly with developers
         oss: 100% nonprofit. Supports educational and community programs at Tampa Devs, Tampa's fastest-growing nonprofit developer community
         support: Direct, personal support from the Talent Team at Tampa Devs
-        title: Tampa Devs Talent exclusives
+        title: Quebec Devs exclusives
         warranty: 90 day placement fee warranty
       hiring_fee: "+ 5% first year salary"
       per_month: "/month"
@@ -810,13 +810,13 @@ en:
     purchase_button:
       title: Get started today
     show:
-      description: Subscribe to Tampa Devs Talent and directly connect with hundreds of local developers in Tampa who are looking for freelance, contract, and full-time work.
+      description: Subscribe to Quebec Devs and directly connect with hundreds of local developers in Tampa who are looking for freelance, contract, and full-time work.
       title_og: Pricing
-      turbo_native_title: Hire local developers in Tampa Bay
+      turbo_native_title: Hire local developers in Quebec
     stats:
       description: Organic, genuine conversations. Higher response rates than LinkedIn or cold emails.
       new_devs: New devs a month
-      rails_developers: Developers in Tampa Bay
+      rails_developers: Developers in Quebec
       response_rate: Response rate
       title: Built By and For Tampa's Developers
   public_profiles:
@@ -846,10 +846,10 @@ en:
   roles:
     new:
       hiring_developers: I'm hiring developers
-      hiring_developers_help_text: You're a business looking to hire a freelance, part-time, or full-time developers in Tampa Bay.
+      hiring_developers_help_text: You're a business looking to hire a freelance, part-time, or full-time developers in Quebec.
       looking_for_work: I'm looking for work
-      looking_for_work_help_text: You're a developer in Tampa Bay looking for your next gig.
-      what_brings_you_here: What brings you to Tampa Devs Talent?
+      looking_for_work_help_text: You're a developer in Quebec looking for your next gig.
+      what_brings_you_here: What brings you to Quebec Devs?
   sessions:
     sign_in: Sign in
     sign_in_hero: Sign in to your account
@@ -875,7 +875,7 @@ en:
     saving: Saving...
   subscription_cta_component:
     cta: Start hiring
-    description: Gain access to %{developers}+ developers in the Tampa Bay area.
+    description: Gain access to %{developers}+ developers in the Quebec area.
     title: Sign up now to see more profiles.
   users:
     paywalled:
@@ -886,8 +886,8 @@ en:
       title: Private information
     suspended:
       show:
-        cta: Email the Tampa Devs Talent team
-        description: Failure to comply with the hiring agreement has forced Tampa Devs Talent to suspend your account. Contact the Tampa Devs Talent team to pay your obligated hiring fees and resume your account.
+        cta: Email the Quebec Devs team
+        description: Failure to comply with the hiring agreement has forced Quebec Devs to suspend your account. Contact the Tampa Devs Talent team to pay your obligated hiring fees and resume your account.
         learn_more: Learn more
         title: Your account has been suspended.
   utc_offsets:

@@ -1,4 +1,4 @@
-# Tampa Devs Talent
+# Quebec Devs
 
 The reverse job board for Tampa Bay's Developer Community.
 

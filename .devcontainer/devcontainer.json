@@ -1,5 +1,5 @@
 {
-    "name": "Tampa Devs Talent",
+    "name": "Quebec Devs",
     "dockerComposeFile": "docker-compose.yml",
     "service": "app",
     "remoteUser": "vscode",

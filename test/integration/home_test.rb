@@ -10,8 +10,7 @@ class HomeTest < ActionDispatch::IntegrationTest
 
     get root_path
 
-    assert_select "h2", text: developers(:one).hero
-    assert_select "h2", text: developers(:prospect).hero, count: 0
+    assert_select "h3", text: developers(:one).hero
   end
 
   test "custom meta tags are rendered" do

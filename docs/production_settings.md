@@ -5,7 +5,7 @@ This documents all of the configuration for the production environment.
 ## Environment variables
 
 * `HOST` - Set to the production URL for route helpers, like `root_url`. RailsDevs uses `railsdevs.com`.
-* `SEGMENT_WRITE_KEY` - Set to the production Segment write key (Tampa Devs Talent) for analytics event collection.
+* `SEGMENT_WRITE_KEY` - Set to the production Segment write key (Quebec Devs) for analytics event collection.
 
 ## Credentials
 

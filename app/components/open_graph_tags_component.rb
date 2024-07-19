@@ -14,7 +14,7 @@ class OpenGraphTagsComponent < ApplicationComponent
     elsif @title.present? && helpers.turbo_native_app?
       @title
     elsif @title.present?
-      "#{@title} · Quebec Dev"
+      "#{@title} · Quebec Devs"
     else
       "Quebec Dev"
     end
@@ -41,6 +41,6 @@ class OpenGraphTagsComponent < ApplicationComponent
   end
 
   def twitter
-    "@tampadevs"
+    "@quebecdevs"
   end
 end

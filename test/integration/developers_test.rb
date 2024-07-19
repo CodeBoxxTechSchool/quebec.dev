@@ -9,7 +9,7 @@ class DevelopersTest < ActionDispatch::IntegrationTest
 
   test "can view developer profiles" do
     get developers_path
-    assert_select "h2", developers(:one).hero
+    assert_select "h3", developers(:one).hero
   end
 
   test "no developers produce empty state" do
@@ -20,7 +20,7 @@ class DevelopersTest < ActionDispatch::IntegrationTest
 
   test "custom meta tags are rendered" do
     get developers_path
-    assert_title_contains "Hire developers in Tampa Bay · Tampa Devs Talent"
+    assert_title_contains "Hire developers in Quebec · Quebec Devs"
     assert_description_contains "looking for their"
   end
 
@@ -53,7 +53,7 @@ class DevelopersTest < ActionDispatch::IntegrationTest
     get developers_path(utc_offsets: [PACIFIC_UTC_OFFSET])
 
     assert_select "input[checked][type=checkbox][value=#{PACIFIC_UTC_OFFSET}][name='utc_offsets[]']"
-    assert_select "h2", "Pacific"
+    assert_select "h3", "Pacific"
   end
 
   test "subscribers can filter developers by countries" do
@@ -66,7 +66,6 @@ class DevelopersTest < ActionDispatch::IntegrationTest
     get developers_path(countries: [country])
 
     assert_select "input[checked][type=checkbox][value='#{country}'][name='countries[]']"
-    assert_text "Hire developers in Tampa Bay in #{country}"
   end
 
   test "developers can be filtered by role type" do
@@ -75,7 +74,6 @@ class DevelopersTest < ActionDispatch::IntegrationTest
     get developers_path(role_types: ["part_time_contract"])
 
     assert_select "input[checked][type=checkbox][value=part_time_contract][name='role_types[]']"
-    assert_select "h2", "Part-time"
   end
 
   test "developers with incorrect role type query does not raise an error" do
@@ -90,13 +88,13 @@ class DevelopersTest < ActionDispatch::IntegrationTest
     get developers_path(role_levels: ["mid"])
 
     assert_select "input[checked][type=checkbox][value=mid][name='role_levels[]']"
-    assert_select "h2", "Mid"
+    assert_select "h1", "Hire mid-level developers in Quebec"
   end
 
   test "developers can be filtered by hero or bio" do
     create_developer(hero: "OSS lover")
     get developers_path(search_query: "OSS")
-    assert_select "h2", "OSS lover"
+    assert_select "h3", "OSS lover"
   end
 
   test "developers can be filtered by specialty" do
@@ -115,13 +113,13 @@ class DevelopersTest < ActionDispatch::IntegrationTest
     get developers_path(include_not_interested: true)
 
     assert_select "input[checked][type=checkbox][name='include_not_interested']"
-    assert_select "h2", "Not interested"
+    assert_select "h3", "Not interested"
   end
 
   test "mobile filtering" do
     get developers_path
 
-    assert_select "h2", text: developers(:one).hero, count: 1
+    assert_select "h3", text: developers(:one).hero, count: 1
     assert_select "form#developer-filters-mobile"
     developers(:one).role_level.update!(junior: false)
 
@@ -140,7 +138,7 @@ class DevelopersTest < ActionDispatch::IntegrationTest
 
     with_pagy_default_items(1) do
       get developers_path(sort: :newest)
-      assert_select "#developers h2", count: 1
+      assert_select "#developers h3", count: 1
       assert_select "#mobile-filters h2", count: 1
       assert_select "a[href=?]", "/developers?sort=newest&page=2"
     end

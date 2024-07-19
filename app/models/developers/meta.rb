@@ -21,7 +21,7 @@ module Developers
       components << i18n("freelance") if freelance?
 
       # i18n-tasks-use t("developers.meta.ruby_on_rails_developers")
-      components << i18n("ruby_on_rails_developers")
+      components << i18n("ruby_on_rails_developers") unless country
 
       # i18n-tasks-use t("developers.meta.in_country")
       components << i18n("in_country", country:) if country
