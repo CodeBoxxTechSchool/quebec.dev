@@ -613,6 +613,11 @@ en:
       title_2: Quebec's Developer Community
       title_og: The reverse job board for the Quebec Developer Community
       turbo_native_title: Quebec Devs
+      candidates: See all candidates
+      future_candidates: Your future candidate is here.
+      about: About quebec.dev
+      join: Join the developer community
+      looking_for: Are you a developer looking for a new challenge or simply looking for THE perfect job?
   impersonating_banner_component:
     cta: Sign out
     title: Signed in as %{email}

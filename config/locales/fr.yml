@@ -3,10 +3,10 @@ fr:
   about:
     show:
       caption: Vincent & Charlton, fondateurs de
-      description: Nous sommes Quebec Devs, la communauté de développeurs de Quebec. Nous construisons Quebec Devs pour faciliter la recherche de la prochaine opportunité pour les développeurs de Tampa Bay tout en soutenant notre mission caritative.
+      description: Nous sommes Quebec Devs, la communauté de développeurs de Tampa Bay. Nous construisons Tampa Devs Talent pour faciliter la recherche de la prochaine opportunité pour les développeurs de Tampa Bay tout en soutenant notre mission caritative.
       readtime: 1 minute de lecture
       title: À propos
-      title_og: À propos de Quebec Devs
+      title_og: À propos de Tampa Devs Talent
   activerecord:
     attributes:
       business:
@@ -222,14 +222,14 @@ fr:
       create:
         notice: Votre demande sera approuvée sous peu. Soyez à l'affût d'un e-mail de notre équipe bientôt.
       index:
-        description: Gagnez des commissions récurrentes de 5 % pour chaque parrainage à Quebec Devs. Rejoignez le programme d'affiliation aujourd'hui et commencez à gagner de l'argent tout en promouvant la seule plateforme de recrutement à but non lucratif qui soutient les communautés de développeurs à Quebec.
-        title: Gagnez de l'argent en promouvant Quebec Devs
+        description: Gagnez des commissions récurrentes de 5 % pour chaque parrainage à Tampa Devs Talent. Rejoignez le programme d'affiliation aujourd'hui et commencez à gagner de l'argent tout en promouvant la seule plateforme de recrutement à but non lucratif qui soutient les communautés de développeurs à Tampa Bay.
+        title: Gagnez de l'argent en promouvant Tampa Devs Talent
       new:
         agreement: J'accepte ces règles
         submit: S'inscrire
         submitting: Inscription en cours...
         subtitle: Règles du programme
-        title: Inscription au programme d'affiliation Quebec Devs
+        title: Inscription au programme d'affiliation Tampa Devs Talent
   blocks:
     create:
       notice: "%{other_recipient} a été bloqué."
@@ -242,16 +242,16 @@ fr:
     show:
       caption: " a formé des développeurs depuis 2018."
       cta: En savoir plus
-      description: CodeBoxx Academy est le partenaire bootcamp officiel de Quebec Devs.
+      description: CodeBoxx Academy est le partenaire bootcamp officiel de Tampa Devs Talent.
       title: Bootcamps de codage
       title_og: Bootcamps de codage
   business_mailer:
     cancel_subscription:
-      subject: Confirmation d'annulation de Quebec Devs
+      subject: Confirmation d'annulation de Tampa Devs Talent
     subscribed:
-      subject: "Votre abonnement Quebec Devs est en ligne ! 🎉 Trouvez votre match parfait."
+      subject: "Votre abonnement Tampa Devs Talent est en ligne ! 🎉 Trouvez votre match parfait."
     welcome:
-      subject: "Bienvenue à Quebec Devs 👋"
+      subject: "Bienvenue à Tampa Devs Talent 👋"
   businesses:
     admin_component:
       confirm_make_invisible: Êtes-vous sûr de vouloir rendre cette entreprise invisible ?
@@ -276,7 +276,7 @@ fr:
       change_avatar: Télécharger
       creating: Création en cours...
       developer_notifications:
-        help_text: Recevez des notifications par e-mail quotidiennes ou hebdomadaires lorsque de nouveaux développeurs ajoutent leur profil à Quebec Devs.
+        help_text: Recevez des notifications par e-mail quotidiennes ou hebdomadaires lorsque de nouveaux développeurs ajoutent leur profil à Tampa Devs Talent.
         legend: Notifications des développeurs
         values:
           daily: Quotidien
@@ -286,11 +286,11 @@ fr:
       notifications:
         title: Notifications par e-mail
       personal:
-        help: Informations sur vous, le point de contact pour votre entreprise sur Quebec Devs.
+        help: Informations sur vous, le point de contact pour votre entreprise sur Tampa Devs Talent.
         title: Détails personnels
       something_went_wrong: Une erreur est survenue lors du téléchargement de votre image, veuillez réessayer.
       survey_request_notifications:
-        help_text: Aidez Quebec Devs en recevant des enquêtes courtes et peu fréquentes sur l'utilisation de la plateforme.
+        help_text: Aidez Tampa Devs Talent en recevant des enquêtes courtes et peu fréquentes sur l'utilisation de la plateforme.
         legend: Demandes de sondage
       updating: Mise à jour en cours...
       your_business_profile: Profil de votre entreprise
@@ -305,10 +305,10 @@ fr:
         description: Félicitations pour votre nouvelle embauche !
         developer_name: Nom du développeur
         feedback: Retour d'information (facultatif)
-        feedback_help: Faites-nous savoir comment nous pouvons améliorer Quebec Devs ou tout ce que vous souhaitez partager.
+        feedback_help: Faites-nous savoir comment nous pouvons améliorer Tampa Devs Talent ou tout ce que vous souhaitez partager.
         requesting: Demande en cours...
         submit: Soumettre
-        title: Avez-vous embauché via Quebec Devs ?
+        title: Avez-vous embauché via Tampa Devs Talent ?
     invisible_banner_component:
       cta: Contactez-nous
       title_html: Votre profil d'entreprise est invisible. Veuillez contacter <a href="mailto:jobs@tampadevs.com">jobs@tampadevs.com</a> pour rétablir votre accès.
@@ -369,9 +369,9 @@ fr:
     celebration_promotion:
       subject: Comment se passe votre conversation avec %{contact} chez %{company}?
     first_message:
-      subject: Conseils pour répondre à votre premier message sur Quebec Devs
+      subject: Conseils pour répondre à votre premier message sur Tampa Devs Talent
     welcome:
-      subject: "Bienvenue à Quebec Devs 👋"
+      subject: "Bienvenue à Tampa Devs Talent 👋"
   developers:
     admin_component:
       confirm_make_invisible: Êtes-vous sûr de vouloir rendre ce développeur invisible ?
@@ -395,14 +395,14 @@ fr:
         success: Merci ! Notre équipe vous contactera bientôt.
       new:
         company_name: Nom de l'entreprise
-        description: Félicitations pour votre nouveau travail ! Parlez-nous en et nous vous enverrons un package de célébration Quebec Devs personnalisé, entièrement gratuit.
+        description: Félicitations pour votre nouveau travail ! Parlez-nous en et nous vous enverrons un package de célébration Tampa Devs Talent personnalisé, entièrement gratuit.
         feedback: Retour d'information (optionnel)
-        feedback_help: Veuillez nous indiquer comment nous pouvons améliorer Quebec Devs ou tout ce que vous souhaitez partager.
+        feedback_help: Veuillez nous indiquer comment nous pouvons améliorer Tampa Devs Talent ou tout ce que vous souhaitez partager.
         mailing_address: Adresse postale
         mailing_address_help: Où pouvons-nous envoyer votre package de célébration ?
         request_package: Demander un package
         requesting: Demande en cours...
-        title: Avez-vous trouvé un emploi grâce à Quebec Devs ?
+        title: Avez-vous trouvé un emploi grâce à Tampa Devs Talent ?
     count_component:
       cta: Réinitialiser les filtres
       title_html: Affichage de <span class='font-bold'>%{count}</span> sur <span class='font-bold'>%{total}</span>+ développeurs.
@@ -487,7 +487,7 @@ fr:
       empty_state:
         body: Essayez de changer ou de réinitialiser vos filtres.
         title: Aucun développeur trouvé
-      title: Développeurs de Quebec
+      title: Développeurs de Tampa Bay
     invisible_banner_component:
       cta: Contactez-nous
       title_html: Votre profil de développeur est invisible. Veuillez contacter <a href="mailto:jobs@tampadevs.com">jobs@tampadevs.com</a> pour rétablir votre accès.
@@ -495,8 +495,8 @@ fr:
       description: "%{count}+ développeurs locaux à la recherche de leur prochain emploi. Pour toutes les piles, niveaux d'expérience et modes de travail, vous les trouverez tous ici."
       freelance: freelance
       hire: Embaucher
-      in_country: développeurs dans %{country}
-      ruby_on_rails_developers: développeurs à Quebec
+      in_country: dans %{country}
+      ruby_on_rails_developers: développeurs à Tampa Bay
     new_field_component:
       new: Nouveau !
     new_fields_component:
@@ -577,8 +577,8 @@ fr:
     unauthorized: Vous n'avez pas accès à cela.
   hired:
     show:
-      description: Quebec Devs offre un package de célébration pour vous féliciter de votre embauche.
-      image_alt: Package de célébration Quebec Devs
+      description: Tampa Devs Talent offre un package de célébration pour vous féliciter de votre embauche.
+      image_alt: Package de célébration Tampa Devs Talent
       title: Félicitations pour votre nouveau travail !
   hiring_agreements:
     signatures:
@@ -589,9 +589,9 @@ fr:
         accepting: Acceptation en cours...
         agreement: En cochant cette case, je confirme ma compréhension et mon acceptation complètes des conditions du site. Je reconnais que cela constitue un accord juridiquement contraignant.
         description: Dernière mise à jour %{last_updated}
-        questions_html: Des questions ? Envoyez un email à l'équipe Quebec Devs à <a href="mailto:jobs@tampadevs.com" class="font-medium no-underline hover:underline">jobs@tampadevs.com</a>.
+        questions_html: Des questions ? Envoyez un email à l'équipe Tampa Devs Talent à <a href="mailto:jobs@tampadevs.com" class="font-medium no-underline hover:underline">jobs@tampadevs.com</a>.
         sign_below: Signez l'accord ci-dessous
-        title: Accord de recrutement Quebec Devs
+        title: Accord de recrutement Tampa Devs Talent
     terms:
       show:
         download: Télécharger le PDF signé
@@ -599,20 +599,20 @@ fr:
         signed_on: Signé le %{date}
   home:
     show:
-      description_og: Quebec Devs donne du pouvoir aux développeurs locaux et soutient le bien social. Arrêtez de parcourir les offres d'emploi et détendez-vous pendant que les entreprises vous contactent !
+      description_og: Tampa Devs Talent donne du pouvoir aux développeurs locaux et soutient le bien social. Arrêtez de parcourir les offres d'emploi et détendez-vous pendant que les entreprises vous contactent !
       developers_heading: Candidats Actifs
       events_heading: Événements à venir
       get_started: Commencer
       learn_more: En savoir plus
       more: Voir plus de développeurs
-      subtitle_1: Quebec Devs
+      subtitle_1: Tampa Devs Talent
       subtitle_2: donne du pouvoir aux développeurs locaux et soutient le bien social.
       subtitle_3: Arrêtez de parcourir les offres d'emploi et détendez-vous pendant que les entreprises vous contactent !
       hero: Le site d'emploi inversé pour la communauté des développeurs de Québec
       title_1: Le tableau de bord inversé pour
-      title_2: la communauté des développeurs de Quebec
-      title_og: Le tableau de bord inversé pour la communauté des développeurs de Quebec
-      turbo_native_title: Quebecs Talent
+      title_2: la communauté des développeurs de Tampa Bay
+      title_og: Le tableau de bord inversé pour la communauté des développeurs de Tampa Bay
+      turbo_native_title: Tampa Devs Talent
   impersonating_banner_component:
     cta: Déconnexion
     title: Connecté en tant que %{email}
@@ -622,7 +622,7 @@ fr:
     form:
       celebration_package_reminder_html: Embauché ? N'oubliez pas de demander un <a class='underline' href="/hired">package de célébration</a> pour des goodies gratuits !
       help: Ajoutez votre message
-      hiring_fee_agreement: J'accepte de payer à Quebec Devs les frais de recrutement de 5% si j'embauche ce développeur pour un poste à temps plein.
+      hiring_fee_agreement: J'accepte de payer à Tampa Devs Talent les frais de recrutement de 5% si j'embauche ce développeur pour un poste à temps plein.
       hiring_fee_cta: Des questions ?
       sending: Envoi en cours...
       submit: Envoyer
@@ -689,16 +689,16 @@ fr:
         title: "%{developer} pourrait avoir été embauché"
     businesses:
       invisiblize_notification:
-        title: Votre profil sur Quebec Devs a été signalé
+        title: Votre profil sur Tampa Devs Talent a été signalé
     developers:
       invisiblize_notification:
-        title: Votre profil sur Quebec Devs a été signalé
+        title: Votre profil sur Tampa Devs Talent a été signalé
       product_announcement_notification:
-        email_subject: "[Quebec Devs] Nouvelle fonctionnalité : Spécialités des développeurs 🚨"
+        email_subject: "[Tampa Devs Talent] Nouvelle fonctionnalité : Spécialités des développeurs 🚨"
         title: 'Nouvelle fonctionnalité : Spécialités des développeurs'
       profile_reminder_notification:
-        email_subject: Votre profil Quebec Devs est-il à jour ?
-        title: Votre profil Quebec Devs est-il à jour ?
+        email_subject: Votre profil Tampa Devs Talent est-il à jour ?
+        title: Votre profil Tampa Devs Talent est-il à jour ?
     index:
       cta: Voir l'historique
       empty_state:
@@ -707,7 +707,7 @@ fr:
       mark_all_as_read: Marquer tout comme lu
       title: Nouvelles notifications
     new_message_notification:
-      email_subject: "%{sender} vous a envoyé un message sur Quebec Devs"
+      email_subject: "%{sender} vous a envoyé un message sur Tampa Devs Talent"
       title: "%{sender} vous a envoyé un message"
     show:
       notice: Notification marquée comme lue.
@@ -717,18 +717,18 @@ fr:
         amount: Montant
         contributions: Contributions
         date: Date
-        description: Quebec Devs soutient directement Tampa Devs, une communauté de développement de logiciels à but non lucratif dédiée à accélérer l'accès à la formation et aux opportunités de carrière dans l'industrie du logiciel de Tampa. Gratuitement, et pour tout le monde.
+        description: Tampa Devs Talent soutient directement Tampa Devs, une communauté de développement de logiciels à but non lucratif dédiée à accélérer l'accès à la formation et aux opportunités de carrière dans l'industrie du logiciel de Tampa. Gratuitement, et pour tout le monde.
         external_link: Ouvrir dans un nouvel onglet
         open_startup: Finances ouvertes
         recipient: Bénéficiaire
-        title: Contributions de Quebec Devs
+        title: Contributions de Tampa Devs Talent
         to_co2_removal: pour la réduction de CO₂
         to_communities: pour les programmes communautaires de Tampa Devs
     dashboard:
       show:
         contributions: Contributions
         date: Date
-        description: Quebec Devs est une startup ouverte avec des métriques entièrement publiques.
+        description: Tampa Devs Talent est une startup ouverte avec des métriques entièrement publiques.
         expenses: Dépenses
         external_link: Ouvrir dans un nouvel onglet
         mrr: MRR
@@ -739,23 +739,23 @@ fr:
       index:
         amount: Montant
         date: Date
-        description: Toutes les dépenses associées à Quebec Devs, y compris l'hébergement, les frais et les achats.
+        description: Toutes les dépenses associées à Tampa Devs Talent, y compris l'hébergement, les frais et les achats.
         expenses: Dépenses
         open_startup: Finances ouvertes
         source: Source
-        title: Dépenses de Quebec Devs
+        title: Dépenses de Tampa Devs Talent
     revenue:
       index:
         amount: Montant
         date: Date
-        description: Tous les revenus générés par Quebec Devs depuis son lancement en juin 2023.
+        description: Tous les revenus générés par Tampa Devs Talent depuis son lancement en juin 2023.
         open_startup: Finances ouvertes
         revenue: Revenus
         source: Source
-        title: Revenus de Quebec Devs
+        title: Revenus de Tampa Devs Talent
   pay_mailer:
     subscription_renewing:
-      subject: Votre abonnement Quebec Devs renouvelle bientôt. Avez-vous embauché quelqu'un ?
+      subject: Votre abonnement Tampa Devs Talent renouvelle bientôt. Avez-vous embauché quelqu'un ?
   policies:
     privacy:
       show:
@@ -776,32 +776,32 @@ fr:
         a_html: Oui ! Vous pouvez annuler votre abonnement depuis le lien Facturation dans le menu déroulant de l'utilisateur. Vous perdrez l'accès à toutes les fonctionnalités payantes à la fin de votre période de facturation.
         q: Puis-je annuler mon abonnement à tout moment ?
       developers:
-        a: Non. Quebec Devs est gratuit pour les développeurs !
-        q: Est-ce que Quebec Devs coûte quelque chose pour les développeurs ?
+        a: Non. Tampa Devs Talent est gratuit pour les développeurs !
+        q: Est-ce que Tampa Devs Talent coûte quelque chose pour les développeurs ?
       fee:
-        a_html: Si vous embauchez un employé via Quebec Devs, vous acceptez de payer des frais de placement égaux à 5 % de son salaire.
+        a_html: Si vous embauchez un employé via Tampa Devs Talent, vous acceptez de payer des frais de placement égaux à 5 % de son salaire.
         q: Comment fonctionnent les frais de recrutement de 5 % ?
       support:
-        a_html: Envoyez un email à l'équipe Quebec Devs pour toute question. Vous pouvez nous joindre à <a href='mailto:jobs@tampadevs.com' class='underline'>jobs@tampadevs.com</a>.
+        a_html: Envoyez un email à l'équipe Tampa Devs Talent pour toute question. Vous pouvez nous joindre à <a href='mailto:jobs@tampadevs.com' class='underline'>jobs@tampadevs.com</a>.
         q: Qui puis-je contacter pour des questions plus spécifiques ?
       title: Foire aux questions
       warranty:
         a_html: Oui ! Tampa Devs offre une garantie de 90 jours pour toutes les embauches, et nous émettrons un crédit égal au montant total des frais de placement initialement payés.
         q: Y a-t-il une garantie sur les frais de recrutement ?
     hero:
-      description: Connectez-vous directement avec des centaines de développeurs locaux à Quebec à la recherche de leur prochain emploi.
-      title: Embauchez des développeurs à Quebec
+      description: Connectez-vous directement avec des centaines de développeurs locaux à Tampa Bay à la recherche de leur prochain emploi.
+      title: Embauchez des développeurs à Tampa Bay
     plan:
       cta_annual: Optez pour l'annuel. Économisez 16 %
       cta_monthly: Optez pour le mensuel. Annulez à tout moment
-      description: Recrutez directement à partir d'un pool de développeurs locaux à Quebec, à tous les niveaux d'expérience.
+      description: Recrutez directement à partir d'un pool de développeurs locaux à Tampa Bay, à tous les niveaux d'expérience.
       features:
         climate_html: Nous donnons 1 % de nos revenus pour lutter contre le changement climatique. <a style="text-decoration:underline" href="https://climate.stripe.com/nxdibE">En savoir plus</a>
         email_updates: Mises à jour par email des nouveaux candidats
         message: Message direct avec les développeurs
         oss: 100 % à but non lucratif. Soutient les programmes éducatifs et communautaires de Tampa Devs, la communauté de développeurs à but non lucratif la plus dynamique de Tampa
         support: Support direct et personnel de l'équipe Talent de Tampa Devs
-        title: Exclusivités Quebec Devs
+        title: Exclusivités Tampa Devs Talent
         warranty: Garantie de 90 jours sur les frais de placement
       hiring_fee: "+ 5 % du salaire de la première année"
       per_month: "/mois"
@@ -810,13 +810,13 @@ fr:
     purchase_button:
       title: Commencez dès aujourd'hui
     show:
-      description: Abonnez-vous à Quebec Devs et connectez-vous directement avec des centaines de développeurs locaux à Tampa à la recherche de travail en freelance, en contrat ou à temps plein.
+      description: Abonnez-vous à Tampa Devs Talent et connectez-vous directement avec des centaines de développeurs locaux à Tampa à la recherche de travail en freelance, en contrat ou à temps plein.
       title_og: Tarification
-      turbo_native_title: Embauchez des développeurs locaux à Quebec
+      turbo_native_title: Embauchez des développeurs locaux à Tampa Bay
     stats:
       description: Conversations organiques et authentiques. Taux de réponse plus élevés que sur LinkedIn ou les emails à froid.
       new_devs: Nouveaux développeurs par mois
-      rails_developers: Développeurs à Quebec
+      rails_developers: Développeurs à Tampa Bay
       response_rate: Taux de réponse
       title: Conçu par et pour les développeurs de Tampa
   public_profiles:
@@ -846,10 +846,10 @@ fr:
   roles:
     new:
       hiring_developers: Je recrute des développeurs
-      hiring_developers_help_text: Vous êtes une entreprise cherchant à recruter des développeurs freelance, à temps partiel ou à temps plein dans la région de Quebec.
+      hiring_developers_help_text: Vous êtes une entreprise cherchant à recruter des développeurs freelance, à temps partiel ou à temps plein dans la région de Tampa Bay.
       looking_for_work: Je cherche du travail
-      looking_for_work_help_text: Vous êtes un développeur de Quebec à la recherche de votre prochaine mission.
-      what_brings_you_here: Qu'est-ce qui vous amène à Quebec Devs ?
+      looking_for_work_help_text: Vous êtes un développeur de Tampa Bay à la recherche de votre prochaine mission.
+      what_brings_you_here: Qu'est-ce qui vous amène à Tampa Devs Talent ?
   sessions:
     sign_in: Se connecter
     sign_in_hero: Connectez-vous à votre compte
@@ -875,7 +875,7 @@ fr:
     saving: Enregistrement...
   subscription_cta_component:
     cta: Commencez à recruter
-    description: Accédez à %{developers}+ développeurs dans la région de Quebec.
+    description: Accédez à %{developers}+ développeurs dans la région de Tampa Bay.
     title: Inscrivez-vous maintenant pour voir plus de profils.
   users:
     paywalled:
@@ -886,8 +886,8 @@ fr:
       title: Informations privées
     suspended:
       show:
-        cta: Envoyez un email à l'équipe Quebec Devs
-        description: Le non-respect de l'accord de recrutement a contraint Quebec Devs à suspendre votre compte. Contactez l'équipe Tampa Devs Talent pour payer vos frais de recrutement obligatoires et reprendre votre compte.
+        cta: Envoyez un email à l'équipe Tampa Devs Talent
+        description: Le non-respect de l'accord de recrutement a contraint Tampa Devs Talent à suspendre votre compte. Contactez l'équipe Tampa Devs Talent pour payer vos frais de recrutement obligatoires et reprendre votre compte.
         learn_more: En savoir plus
         title: Votre compte a été suspendu.
   utc_offsets:
