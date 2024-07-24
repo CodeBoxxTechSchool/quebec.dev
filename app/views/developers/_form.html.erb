@@ -1,6 +1,6 @@
 <%= render "shared/error_messages", resource: developer %>
 
-<div class="flex flex-col space-y-6">
+<div class="container overflow-hidden max-w-5xl py-24 mx-auto flex flex-col space-y-6">
   <%= render ToastMessageComponent.new(icon: "information_circle") do |c| %>
     <%= c.message do %>
       There's a new way to sort profiles!
@@ -15,17 +15,17 @@
   <% end %>
 
   <%= form_with model: developer do |form| %>
-    <div class="bg-white shadow px-4 py-5 lg:rounded-lg sm:p-6">
+    <div class="px-4 py-5 sm:p-6">
       <div class="md:grid md:grid-cols-3 md:gap-6">
         <div class="md:col-span-1">
-          <h2 class="text-lg font-medium leading-6 text-red-900"><%= t(".profile.title") %></h2>
+          <h2 class="secondary-font text-lg font-medium leading-6 text-red-900"><%= t(".profile.title") %></h2>
           <p class="mt-2 text-sm text-red-950"><%= t(".profile.help_text") %></p>
         </div>
 
         <div class="mt-5 md:mt-0 md:col-span-2">
           <div class="space-y-6">
             <div>
-              <%= form.label :name, class: "block text-sm font-medium text-red-950" %>
+              <%= form.label :name, class: "secondary-font block text-sm font-medium text-red-950" %>
               <div class="mt-1">
                 <%= form.text_field :name, autocomplete: "name", class: field_classes(form, :name) %>
               </div>
@@ -33,7 +33,7 @@
             </div>
 
             <div>
-              <%= form.label :hero, class: "block text-sm font-medium text-red-950" %>
+              <%= form.label :hero, class: "secondary-font block text-sm font-medium text-red-950" %>
               <div class="mt-1">
                 <%= form.text_field :hero, class: field_classes(form, :hero) %>
               </div>
@@ -45,7 +45,7 @@
                 <div class="grid grid-cols-1 sm:grid-cols-5 sm:col-span-3 gap-6">
                   <div class="sm:col-span-2">
                     <div class="flex items-center">
-                      <%= location.label :city, class: "block text-sm font-medium text-red-950" %>
+                      <%= location.label :city, class: "secondary-font block text-sm font-medium text-red-950" %>
                       <%= render Developers::NewFieldComponent.new(form.object, :location, size: :small) %>
                     </div>
                     <div class="mt-1">
@@ -53,13 +53,13 @@
                     </div>
                   </div>
                   <div class="sm:col-span-1">
-                    <%= location.label :state, class: "block text-sm font-medium text-red-950" %>
+                    <%= location.label :state, class: "secondary-font block text-sm font-medium text-red-950" %>
                     <div class="mt-1">
                       <%= location.text_field :state, class: field_classes(location, :state) %>
                     </div>
                   </div>
                   <div class="sm:col-span-2">
-                    <%= location.label :country, class: "block text-sm font-medium text-red-950" %>
+                    <%= location.label :country, class: "secondary-font block text-sm font-medium text-red-950" %>
                     <div class="mt-1">
                       <%= location.text_field :country, class: field_classes(location, :country) %>
                     </div>
@@ -70,7 +70,7 @@
             <% end %>
 
             <div data-controller="file-upload" data-file-upload-visibility-class="hidden" data-file-upload-loading-class="opacity-50">
-              <span class="block text-sm font-medium text-red-950"><%= t(".profile.avatar") %></span>
+              <span class="secondary-font block text-sm font-medium text-red-950"><%= t(".profile.avatar") %></span>
               <div class="mt-1 flex items-center">
                 <div class="relative">
                   <%= render AvatarComponent.new(avatarable: developer, variant: :medium, data: {"file-upload-target": "image"}) %>
@@ -90,7 +90,7 @@
             </div>
 
             <div data-controller="file-upload" data-file-upload-visibility-class="hidden" data-file-upload-loading-class="opacity-50">
-              <span class="block text-sm font-medium text-red-950"><%= t(".profile.cover_image") %></span>
+              <span class="secondary-font block text-sm font-medium text-red-950"><%= t(".profile.cover_image") %></span>
               <div class="relative">
                 <%= form.hidden_field :cover_image, value: form.object.cover_image.signed_id, id: "developer_cover_image_hidden" if form.object.cover_image.attached? %>
                 <%= form.file_field :cover_image, direct_upload: true, accept: "image/png, image/jpg, image/jpeg, image/gif", data: {action: "input->file-upload#select direct-upload:initialize->file-upload#start direct-upload:error->file-upload#error"}, class: "hidden" %>
@@ -116,13 +116,13 @@
       </div>
     </div>
 
-    <div class="bg-white shadow mt-8 px-4 py-5 lg:rounded-lg sm:p-6">
+    <div class="mt-8 px-4 py-5 sm:p-6">
       <div class="md:grid md:grid-cols-3 md:gap-6">
         <div class="md:col-span-1">
-          <%= form.label :bio, class: "text-lg font-medium leading-6 text-red-900" %>
+          <%= form.label :bio, class: "secondary-font text-lg font-medium leading-6 text-red-900" %>
           <p class="mt-2 text-sm text-red-950"><%= t(".bio.description") %></p>
 
-          <h4 class="font-medium uppercase tracking-wide text-red-950 text-sm mt-4"><%= t(".bio.examples.title") %></h4>
+          <h4 class="secondary-font font-medium uppercase tracking-wide text-red-900 text-sm mt-4"><%= t(".bio.examples.title") %></h4>
           <ul class="text-sm text-red-950 list-disc list-inside">
             <li class="mt-1"><%= t(".bio.examples.origin") %></li>
             <li class="mt-1"><%= t(".bio.examples.accomplishment") %></li>
@@ -147,14 +147,14 @@
     </div>
 
     <% if Feature.enabled?(:developer_specialties) %>
-      <div id="specialties" class="bg-white shadow mt-8 px-4 py-5 lg:rounded-lg sm:p-6">
+      <div id="specialties" class="mt-8 px-4 py-5 sm:p-6">
         <div class="md:grid md:grid-cols-3 md:gap-6">
           <div>
-            <%= form.label :specialties, class: "text-lg font-medium leading-6 text-red-900" %>
+            <%= form.label :specialties, class: "secondary-font text-lg font-medium leading-6 text-red-900" %>
             <p class="mt-2 text-sm text-red-950"><%= t(".specialties.description") %></p>
             <p class="mt-2 text-sm text-red-950"><%= t(".specialties.new.before") %> <%= link_to t(".specialties.new.cta"), "mailto:jobs@tampadevs.com?subject=#{t(".specialties.new.subject")}", class: "text-red-950 font-medium underline hover:text-red-900" %>.</p>
 
-            <h4 class="font-medium uppercase tracking-wide text-red-950 text-sm mt-4"><%= t(".specialties.note.title") %></h4>
+            <h4 class="secondary-font font-medium uppercase tracking-wide text-red-900 text-sm mt-4"><%= t(".specialties.note.title") %></h4>
             <p class="mt-1 text-sm text-red-950"><%= t(".specialties.note.description") %></p>
           </div>
 
@@ -174,7 +174,7 @@
       </div>
     <% end %>
 
-    <div class="bg-white shadow mt-8 px-4 py-5 lg:rounded-lg sm:p-6">
+    <div class="mt-8 px-4 py-5 sm:p-6">
       <div class="md:grid md:grid-cols-3 md:gap-6">
         <div class="md:col-span-1">
           <h3 class="text-lg font-medium leading-6 text-red-900"><%= t(".work_preferences.title") %></h3>
@@ -184,7 +184,7 @@
         <div class="mt-5 md:mt-0 md:col-span-2">
           <div class="space-y-6">
             <fieldset>
-              <legend class="text-base font-medium text-red-900">
+              <legend class="secondary-font text-base font-medium text-red-900">
                 <div class="flex">
                   <%= t(".search_status.title") %>
                   <%= render Developers::NewFieldComponent.new(form.object, :search_status) %>
@@ -222,7 +222,7 @@
             </fieldset>
 
             <fieldset>
-              <legend class="text-base font-medium text-red-900">
+              <legend class="secondary-font text-base font-medium text-red-900">
                 <%= t(".codeboxx_student.title") %>
               </legend>
               <p class="text-sm text-red-950"><%= sanitize t(".codeboxx_student.learn_more"), tags: %w[a p span div], attributes: %w[href class style] %></p>
@@ -237,7 +237,7 @@
             <%= form.fields_for :role_type, include_id: false do |role_type| %>
               <fieldset>
                 <div>
-                  <legend class="text-base font-medium text-red-900 w-full">
+                  <legend class="secondary-font text-base font-medium text-red-900 w-full">
                     <div class="flex">
                       <%= t(".role_type.title") %>
                       <%= render Developers::NewFieldComponent.new(form.object, :role_type) %>
@@ -265,7 +265,7 @@
             <%= form.fields_for :role_level, include_id: false do |role_level| %>
               <fieldset>
                 <div>
-                  <legend class="text-base font-medium text-red-900 w-full">
+                  <legend class="secondary-font text-base font-medium text-red-900 w-full">
                     <div class="flex">
                       <%= t(".role_level.title") %>
                       <%= render Developers::NewFieldComponent.new(form.object, :role_level) %>
@@ -302,7 +302,7 @@
       </div>
     </div>
 
-    <div class="bg-white shadow mt-8 px-4 py-5 lg:rounded-lg sm:p-6">
+    <div class="mt-8 px-4 py-5 sm:p-6">
       <div class="md:grid md:grid-cols-3 md:gap-6">
         <div class="md:col-span-1">
           <h3 class="text-lg font-medium leading-6 text-red-900"><%= t(".online_presence.title") %></h3>
@@ -312,7 +312,7 @@
         <div class="mt-5 md:mt-0 md:col-span-2">
           <div class="space-y-6">
             <div>
-              <%= form.label :website, class: "block text-sm font-medium text-red-950" %>
+              <%= form.label :website, class: "secondary-font block text-sm font-medium text-red-950" %>
               <div class="mt-1 flex rounded-md shadow-sm">
                 <span class="inline-flex items-center px-3 rounded-l-md border border-r-0 border-gray-300 bg-red-50 text-red-950 sm:text-sm">
                   https://
@@ -322,7 +322,7 @@
             </div>
 
             <div class="sm:col-start-1 sm:col-end-4">
-              <%= form.label :github, class: "block text-sm font-medium text-red-950" %>
+              <%= form.label :github, class: "secondary-font block text-sm font-medium text-red-950" %>
               <div class="mt-1 flex rounded-md shadow-sm">
                 <span class="inline-flex items-center px-3 rounded-l-md border border-r-0 border-gray-300 bg-red-50 text-red-950 sm:text-sm">
                   github.com/
@@ -332,7 +332,7 @@
             </div>
 
             <div class="sm:col-start-1 sm:col-end-4">
-              <%= form.label :linkedin, class: "block text-sm font-medium text-red-950" %>
+              <%= form.label :linkedin, class: "secondary-font block text-sm font-medium text-red-950" %>
               <div class="mt-1 flex rounded-md shadow-sm">
                 <span class="inline-flex items-center px-3 rounded-l-md border border-r-0 border-gray-300 bg-red-50 text-red-950 sm:text-sm">
                   linkedin.com/in/
@@ -342,7 +342,7 @@
             </div>
 
             <div class="sm:col-start-1 sm:col-end-4">
-              <%= form.label :stack_overflow, "Stack Overflow", class: "block text-sm font-medium text-red-950" %>
+              <%= form.label :stack_overflow, "Stack Overflow", class: "secondary-font block text-sm font-medium text-red-950" %>
               <div class="mt-1 flex rounded-md shadow-sm">
                 <span class="inline-flex items-center px-3 rounded-l-md border border-r-0 border-gray-300 bg-red-50 text-red-950 sm:text-sm">
                   stackoverflow/users/
@@ -352,7 +352,7 @@
             </div>
 
             <div class="sm:col-start-1 sm:col-end-4">
-              <%= form.label :twitter, class: "block text-sm font-medium text-red-950" %>
+              <%= form.label :twitter, class: "secondary-font block text-sm font-medium text-red-950" %>
               <div class="mt-1 flex rounded-md shadow-sm">
                 <span class="inline-flex items-center px-3 rounded-l-md border border-r-0 border-gray-300 bg-red-50 text-red-950 sm:text-sm">
                   twitter.com/
@@ -362,7 +362,7 @@
             </div>
 
             <div>
-              <%= form.label :mastodon, class: "block text-sm font-medium text-red-950" %>
+              <%= form.label :mastodon, class: "secondary-font block text-sm font-medium text-red-950" %>
               <div class="mt-1 flex rounded-md shadow-sm">
                 <span class="inline-flex items-center px-3 rounded-l-md border border-r-0 border-gray-300 bg-red-50 text-red-950 sm:text-sm">
                   https://
@@ -375,7 +375,7 @@
       </div>
     </div>
 
-    <div class="bg-white shadow mt-8 px-4 py-5 lg:rounded-lg sm:p-6">
+    <div class="mt-8 px-4 py-5 sm:p-6">
       <div class="md:grid md:grid-cols-3 md:gap-6">
         <div class="md:col-span-1">
           <h3 id="scheduling" class="text-lg font-medium leading-6 text-red-900"><%= t(".scheduling.title") %></h3>
@@ -385,7 +385,7 @@
         <div class="mt-5 md:mt-0 md:col-span-2 space-y-4">
           <div>
             <div class="flex items-center">
-              <%= form.label :scheduling_link, class: "block text-sm font-medium text-red-950" %>
+              <%= form.label :scheduling_link, class: "secondary-font block text-sm font-medium text-red-950" %>
               <%= render Developers::NewFieldComponent.new(form.object, :scheduling_link, size: :small) %>
             </div>
             <div class="mt-1 flex rounded-md shadow-sm">
@@ -399,7 +399,7 @@
       </div>
     </div>
 
-    <div class="bg-white shadow mt-8 px-4 py-5 lg:rounded-lg sm:p-6">
+    <div class="mt-8 px-4 py-5 sm:p-6">
       <div class="md:grid md:grid-cols-3 md:gap-6">
         <div class="md:col-span-1">
           <h3 id="notifications" class="text-lg font-medium leading-6 text-red-900"><%= t(".notifications.title") %></h3>
@@ -413,8 +413,8 @@
                   <%= form.check_box :profile_reminder_notifications, class: "focus:ring-red-500 h-4 w-4 text-red-950 border-gray-300 rounded" %>
                 </div>
                 <div class="ml-3 text-sm">
-                  <%= form.label :profile_reminder_notifications, t(".notifications.profile_reminder_notifications"), class: "font-medium text-red-950" %>
-                  <p class="text-red-950"><%= t(".notifications.profile_reminder_notifications_help") %></p>
+                  <%= form.label :profile_reminder_notifications, t(".notifications.profile_reminder_notifications"), class: "secondary-font font-medium text-red-950" %>
+                  <p class="secondary-font text-red-950"><%= t(".notifications.profile_reminder_notifications_help") %></p>
                 </div>
               </div>
             </div>
@@ -423,11 +423,11 @@
             <div class="space-y-4">
               <div class="flex items-start">
                 <div class="h-5 flex items-center">
-                  <%= form.check_box :product_announcement_notifications, class: "focus:ring-red-500 h-4 w-4 text-red-950 border-gray-300 rounded" %>
+                  <%= form.check_box :product_announcement_notifications, class: "secondary-font focus:ring-red-500 h-4 w-4 text-red-950 border-gray-300 rounded" %>
                 </div>
                 <div class="ml-3 text-sm">
-                  <%= form.label :product_announcement_notifications, t(".notifications.product_announcement_notifications"), class: "font-medium text-red-950" %>
-                  <p class="text-red-950"><%= t(".notifications.product_announcement_notifications_help") %></p>
+                  <%= form.label :product_announcement_notifications, t(".notifications.product_announcement_notifications"), class: "secondary-font font-medium text-red-950" %>
+                  <p class="secondary-font text-red-950"><%= t(".notifications.product_announcement_notifications_help") %></p>
                 </div>
               </div>
             </div>

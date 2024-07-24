@@ -1,10 +1,10 @@
-<div class="mt-16 sm:mx-8 lg:mx-auto max-w-5xl">
+<div class="container overflow-hidden max-w-5xl py-24 mx-auto">
   <h1 class="text-3xl font-bold leading-tight text-red-900 mx-8 sm:mx-0">
     <%= t(".what_brings_you_here") %>
   </h1>
 
   <div class="sm:grid sm:grid-cols-2 sm:gap-8 mt-8">
-    <div class="sm:rounded-lg shadow sm:hover:shadow-lg relative group bg-white p-6 focus-within:ring-2 focus-within:ring-inset focus-within:ring-red-500">
+    <div class="relative group bg-white p-6 focus-within:ring-2 focus-within:ring-inset focus-within:ring-red-500">
       <div>
         <span class="inline-flex rounded p-3 bg-red-100 text-red-950 ring-4 ring-white">
           <%= inline_svg_tag "icons/outline/briefcase.svg", class: "h-6 w-6", aria_hidden: true %>
@@ -21,12 +21,12 @@
           <%= t(".looking_for_work_help_text") %>
         </p>
       </div>
-      <span class="pointer-events-none absolute top-6 right-6 text-red-300 group-hover:text-red-400">
+      <span class="pointer-events-none absolute top-6 right-6 text-red-300 group-hover:text-red-600">
         <%= inline_svg_tag "icons/outline/arrow_right.svg", class: "h-6 w-6", aria_hidden: true %>
       </span>
     </div>
 
-    <div class="sm:rounded-lg shadow sm:hover:shadow-lg relative group bg-white p-6 focus-within:ring-2 focus-within:ring-inset focus-within:ring-red-500">
+    <div class="relative group bg-white p-6 focus-within:ring-2 focus-within:ring-inset focus-within:ring-red-500">
       <div>
         <span class="inline-flex rounded p-3 bg-red-100 text-red-950 ring-4 ring-white">
           <%= inline_svg_tag "icons/outline/user_group.svg", class: "h-6 w-6", aria_hidden: true %>
@@ -43,7 +43,7 @@
           <%= t(".hiring_developers_help_text") %>
         </p>
       </div>
-      <span class="pointer-events-none absolute top-6 right-6 text-red-300 group-hover:text-red-400">
+      <span class="pointer-events-none absolute top-6 right-6 text-red-300 group-hover:text-red-600">
         <%= inline_svg_tag "icons/outline/arrow_right.svg", class: "h-6 w-6", aria_hidden: true %>
       </span>
     </div>
