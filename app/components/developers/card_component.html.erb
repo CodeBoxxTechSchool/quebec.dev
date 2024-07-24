@@ -11,7 +11,7 @@
             <div class="grid grid-rows-12">
               <div class="flex-initial w-full h-7 text-xs space-x-10 grid-rows-1 bg-orange-50 p-1.5">
                 <div class="flex flex-row justify-between">
-                  <p class="text-left">RECHERCHE ACTIVEMENT</p>
+                  <p class="text-left"><%= t('home.show.devs.actively_looking') %></p>
                   <div class="flex flex-row items-center">
                     <%= image_tag 'heart.png', class: 'my-0 mx-1' %>
                     <%= image_tag 'info-circle.png', class: 'my-0 mx-1' %>
@@ -19,8 +19,8 @@
                 </div>
               </div>
               <div class="flex flex-row text-[8px] px-2 pt-1 grid-rows-1">
-                <p class="mr-auto">Favorise le Télétravail</p>
-                <p class="">Ville de Québec</p>
+                <p class="mr-auto"><%= t('home.show.devs.remote') %></p>
+                <p class=""><%= t('home.show.devs.city') %> Québec</p>
               </div>
               <h3 class="grid-rows-4 text-xs p-2 max-h-[42px] overflow-hidden text-ellipsis"><%= developer.hero %>
               </h3>
@@ -34,7 +34,7 @@
             <%= render Developers::SpecialtiesComponent.new(developer.specialties) %>
         </div>
       </div>
-      <%= button_to 'ENGAGER', developer, method: :get, class: "bg-red-600 text-white py-3 w-full" %>
+      <%= button_to 'Engager', developer, method: :get, class: "bg-red-600 text-white py-3 w-full" %>
     </div>
   </div>
 </div>

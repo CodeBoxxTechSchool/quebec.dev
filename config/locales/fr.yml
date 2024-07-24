@@ -611,8 +611,34 @@ fr:
       hero: Le site d'emploi inversé pour la communauté des développeurs de Québec
       title_1: Le tableau de bord inversé pour
       title_2: la communauté des développeurs de Tampa Bay
-      title_og: Le tableau de bord inversé pour la communauté des développeurs de Tampa Bay
-      turbo_native_title: Tampa Devs Talent
+      title_og: Le tableau de bord inversé pour la communauté des développeurs de Québec
+      turbo_native_title: Quebec Devs
+      candidates: Voir tous les candidats
+      future_candidates: Votre futur candidat est ici.
+      about: À propos de quebec.dev
+      join: Rejoignez la communauté
+      looking_for: Vous êtes un développeur à la recherche d'un nouveau défi ou tout simplement à la recherche de L'emploi idéal ?
+      looking_for_2: Rejoints les 200 autres développeurs inscris sur quebec.dev et qui sait, peut-être trouveras-tu l’âme-soeur professionnelle ou la carrière parfaite pour toi.
+      looking_for_3: Créez ton profile via le lien-ci bas. Les entreprises partenaires auront ainsi accès à ton profile développeur.
+      all_events: Voir tous les événements
+      propose_event: Proposer un événement
+      our_partners: Nos Partenaires
+      contact_us: Contactez-Nous
+      subscribe: S’inscrire
+      submit: Soumettre
+      form:
+        name: Nom
+        company: Entreprise
+        email: Courriel
+        subject: Sujet
+        message: Message
+      devs:
+        actively_looking: RECHERCHE ACTIVEMENT
+        hire: Engager
+        remote: Favorise le télétravail
+        hybrid: Favorise le travail hybride
+        onsite: Favorise le présentiel
+        city: Ville de
   impersonating_banner_component:
     cta: Déconnexion
     title: Connecté en tant que %{email}

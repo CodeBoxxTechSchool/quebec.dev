@@ -618,6 +618,27 @@ en:
       about: About quebec.dev
       join: Join the developer community
       looking_for: Are you a developer looking for a new challenge or simply looking for THE perfect job?
+      looking_for_2: Join the 200 other developers registered on quebec.dev and who knows, maybe you'll find your professional soulmate or the perfect career for you.
+      looking_for_3: Create your profile via the link below. Partner companies will then have access to your developer profile.
+      all_events: See all events
+      propose_event: Propose an event
+      our_partners: Our Partners
+      contact_us: Contact Us
+      subscribe: Subscribe
+      submit: Submit
+      form:
+        name: Name
+        company: Company
+        email: Email
+        subject: Subject
+        message: Message
+      devs:
+        actively_looking: ACTIVELY LOOKING
+        hire: Hiring
+        remote: Prefers Teleworking
+        hybrid: Prefers Hybrid
+        onsite: Prefers On-Site
+        city: City of
   impersonating_banner_component:
     cta: Sign out
     title: Signed in as %{email}
