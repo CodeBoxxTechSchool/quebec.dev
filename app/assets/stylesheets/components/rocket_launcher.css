@@ -1,0 +1,46 @@
+.rocket {
+    top: 0;
+    right: 0;
+}
+
+.launch {
+    -webkit-animation:liftoff 2.2s linear 1s;
+    animation:liftoff 2.2s linear 1s;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode:forwards;
+    -webkit-animation-timing-function: cubic-bezier(0.1, -0.1, 0.2, 0);
+    animation-timing-function: cubic-bezier(0.1, -0.1, 0.2, 0);
+}
+
+@keyframes liftoff {
+    0%{transform:translate(0px ,0px);
+        opacity:1;}
+    70%{opacity:0.6;}
+    100%{transform:translate(0px ,-800px);
+        opacity:0;}
+}
+
+.astronaut {
+    position: absolute;
+    bottom: 300px;
+    right: -200px;
+}
+
+.chaching {
+    bottom: 15px;
+    right: 0;
+    -webkit-animation:liftoff 2.2s linear 1s;
+    animation:liftoff 2.2s linear 1s;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode:forwards;
+    -webkit-animation-timing-function: cubic-bezier(0.1, -0.1, 0.2, 0);
+    animation-timing-function: cubic-bezier(0.1, -0.1, 0.2, 0);
+}
+
+@keyframes jump {
+    0%{transform:translate(0px ,0px);
+        opacity:1;}
+    70%{opacity:0.6;}
+    100%{transform:translate(0px ,-800px);
+        opacity:0;}
+}
