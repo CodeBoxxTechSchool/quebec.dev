@@ -4,5 +4,6 @@
 @import "./components/splash.css";
 @import "./components/navbar.css";
 @import "./tailwindcss/overrides.css";
+@import "./components/rocket_launcher.css";
 
 @import "./components/pagy.css";
