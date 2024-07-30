@@ -23,9 +23,7 @@
     </div>
 
     <div class="mt-8 text-right mr-2 lg:mr-0 flex items-center justify-center pt-10">
-      <button class="border-white border px-8 py-3 text-white">
-        <%= t("home.show.candidates") %>
-      </button>
+      <%= button_to t('home.show.candidates'), developers_path, method: :get, class: "border-white border px-8 py-3 text-white hover:bg-white hover:text-red-800" %>
     </div>
   </div>
 </section>
@@ -97,8 +95,7 @@
       <p class="mb-4"><%= t("home.show.looking_for_2") %></p>
 
       <p class="mb-4"><%= t("home.show.looking_for_3") %></p>
-
-      <button class="bg-orange-50 text-black py-3 px-8 w-full my-9"><%= t("home.show.subscribe") %></button>
+      <%= button_to t('home.show.subscribe'), ("#"), method: :get, class: "bg-orange-50 text-black hover:bg-red-600 hover:text-white py-3 px-8 w-1/2 my-9" %>
     </div>
   </div>
 </section>
@@ -118,13 +115,9 @@
       <iframe class="h-[10000px]" id="next-event-widget" src="http://localhost:8787/widget/events" frameborder="0" scrolling="no"></iframe>
     </div>
 
-    <div class="mt-4 flex flex-col sm:flex-row items-center justify-center pb-32 pt-10">
-      <button class="border-white border px-8 m-2 py-2 text-white">
-        <%= t("home.show.all_events") %>
-      </button>
-      <button class="px-8 py-2 text-black m-2 bg-orange-50 ">
-        <%= t("home.show.propose_event") %>
-      </button>
+    <div class="mt-4 flex flex-col sm:flex-row items-center justify-center pb-32 pt-10 gap-4">
+      <%= button_to t('home.show.all_events'), ("#"), method: :get, class: "border-white border px-8 py-3 text-white hover:bg-white hover:text-red-800" %>
+      <%= button_to t('home.show.propose_event'), ("#"), method: :get, class: "text-black bg-orange-50 border px-8 py-3 hover:bg-white hover:text-red-800" %>
     </div>
   </div>
 </section>
@@ -150,7 +143,7 @@
 </section>
 
 
-<section class="flex bg-orange-50 text-gray-800 justify-center items-center flex-col relative h-auto px-12 py-24">
+<section id="contactus" class="flex bg-orange-50 text-gray-800 justify-center items-center flex-col relative h-auto px-12 py-24">
   <div class="absolute top-0 right-0 w-full sm:w-1/2 h-full bg-orange-100 z-0"></div>
   <!--  all headers structure -->
   <div class="container mx-auto relative z-10 mb-4">
@@ -180,7 +173,7 @@
         </div>
       </div>
       <div class="text-center">
-        <button type="submit" class="bg-black text-white py-3 px-4 rounded-none"><%= t("home.show.submit") %></button>
+        <button type="submit" class="bg-black text-white py-3 px-4 w-1/2 rounded-none"><%= t("home.show.submit") %></button>
       </div>
     </form>
   </div>
