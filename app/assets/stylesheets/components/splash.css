@@ -12,16 +12,16 @@
     padding: 2em;
 }
 
-.hero:before {
-    position: fixed;
-    width: 100%;
-    height: 100%;
-    background-image: url("/images/splash-header-lev0.png");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    z-index: -1;
-}
+/*.hero:before {*/
+/*    position: fixed;*/
+/*    width: 100%;*/
+/*    height: 100%;*/
+/*    background-image: url("/images/splash-header-lev0.png");*/
+/*    background-size: cover;*/
+/*    background-repeat: no-repeat;*/
+/*    background-position: center;*/
+/*    z-index: -1;*/
+/*}*/
 
 .hero:after {
     position: absolute;
