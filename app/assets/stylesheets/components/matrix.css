@@ -1,8 +1,14 @@
 canvas {
-    display: block;
+    display: none;
     position:absolute;
     top:0;
     left:0;
     z-index: -1;
     transform: rotate(-15deg);
+}
+
+@media screen(sm) {
+    canvas {
+        display: block;
+    }
 }
