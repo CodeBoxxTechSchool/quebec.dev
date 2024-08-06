@@ -48,7 +48,7 @@ Point.prototype.draw = function(ctx){
     if(this.y > ch)
     {
         this.y = randomFloat(-100,0);
-        this.speed = randomFloat(1,5);
+        this.speed = randomFloat(2,5);
     }
 }
 
