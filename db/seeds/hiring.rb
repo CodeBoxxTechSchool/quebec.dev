@@ -23,6 +23,6 @@ Businesses::HiringInvoiceRequest.find_or_create_by!(business:) do |form|
 end
 
 HiringAgreements::Term.first_or_create! do |term|
-  term.body = "Example hiring terms for Tampa Devs Talent. Make sure to follow them!"
+  term.body = "Example hiring terms for Quebec Devs. Make sure to follow them!"
   term.active = true
 end
