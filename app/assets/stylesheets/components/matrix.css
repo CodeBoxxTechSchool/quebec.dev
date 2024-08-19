@@ -5,6 +5,7 @@ canvas {
     left:0;
     z-index: -1;
     transform: rotate(-15deg);
+    height: 74vh;
 }
 
 @media screen(sm) {
