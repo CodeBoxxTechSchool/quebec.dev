@@ -10,6 +10,7 @@
     align-items: center;
     flex-direction: column;
     padding: 2em;
+    overflow: hidden;
 }
 
 /*.hero:before {*/
@@ -47,6 +48,7 @@
     padding: 25px;
     margin-top: 50vh;
     margin-bottom: 0;
+    position: fixed;
 }
 
 @media screen(sm) {
