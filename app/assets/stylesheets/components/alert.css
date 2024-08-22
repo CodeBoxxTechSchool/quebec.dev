@@ -1,0 +1,29 @@
+.alert {
+    -moz-animation: hideAlert 0s ease-in 3s forwards;
+    /* Firefox */
+    -webkit-animation: hideAlert 0s ease-in 3s forwards;
+    /* Safari and Chrome */
+    -o-animation: hideAlert 0s ease-in 3s forwards;
+    /* Opera */
+    animation: hideAlert 0s ease-in 3s forwards;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+    transition: all 2s ease-in-out;
+}
+
+@keyframes hideAlert {
+    to {
+        width:0;
+        height:0;
+        overflow:hidden;
+        transition: all 2s ease-in-out;
+    }
+}
+@-webkit-keyframes hideAlert {
+    to {
+        width:0;
+        height:0;
+        visibility:hidden;
+        transition: all 2s ease-in-out;
+    }
+}

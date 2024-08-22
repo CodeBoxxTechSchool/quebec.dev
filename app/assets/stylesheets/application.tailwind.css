@@ -6,5 +6,6 @@
 @import "./tailwindcss/overrides.css";
 @import "./components/rocket_launcher.css";
 @import "./components/matrix.css";
+@import "./components/alert.css";
 
 @import "./components/pagy.css";

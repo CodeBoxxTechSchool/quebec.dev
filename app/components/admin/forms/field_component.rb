@@ -18,7 +18,7 @@ module Admin
       end
 
       def classes
-        class_names("block w-full sm:text-sm rounded-md", {
+        class_names("block w-full sm:text-sm", {
           "focus:ring-red-500 focus:border-red-500 border-red-300": errors?,
           "focus:ring-red-500 focus:border-gray-500 border-gray-300": !errors?
         })
