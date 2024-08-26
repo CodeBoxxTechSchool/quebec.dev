@@ -7,7 +7,7 @@ module Admin
     end
 
     def call
-      tag.div class: class_names("w-full mx-auto mt-8", width) do
+      tag.div class: class_names("w-full mx-auto mt-8") do
         tag.div content, class: "px-4 sm:px-6 lg:px-8"
       end
     end
