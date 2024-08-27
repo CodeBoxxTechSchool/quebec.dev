@@ -1,6 +1,6 @@
 shared:
   support: jobs@quebecdevs.com
-  support_mailbox: "Quebec Devs Talent <admin@codeboxx.biz>"
-  notifications_mailbox: "Quebec Devs Talent <admin@codeboxx.biz>"
-  updates_mailbox: "Quebec Devs Talent <admin@codeboxx.biz>"
-  reminders_mailbox: "Quebec Devs Talent <admin@codeboxx.biz>"
+  support_mailbox: "Quebec Devs Talent <info@quebec.dev>"
+  notifications_mailbox: "Quebec Devs Talent <info@quebec.dev>"
+  updates_mailbox: "Quebec Devs Talent <info@quebec.dev>"
+  reminders_mailbox: "Quebec Devs Talent <info@quebec.dev>"
