@@ -10,6 +10,7 @@
     align-items: center;
     flex-direction: column;
     padding: 2em;
+    overflow: hidden;
 }
 
 /*.hero:before {*/
@@ -35,18 +36,20 @@
 }
 
 .hero .container {
-
+    margin-bottom: 25%;
 }
 
 .hero h2 {
     /*text-transform: uppercase;*/
+    display: none;
     font-weight: bold;
-    font-size: 2em;
+    font-size: 1.8em;
     line-height: 1em;
     width: 100%;
-    padding: 25px;
-    margin-top: 50vh;
-    margin-bottom: 0;
+    padding: 0;
+    /*margin-top: 50vh;*/
+    /*margin-bottom: 0;*/
+    position: fixed;
 }
 
 @media screen(sm) {
@@ -58,9 +61,11 @@
         content: "";
     }
     .hero h2 {
+        display: inline-block;
         font-size: 4em;
         width: 38%;
-        margin-top: 0;
-        margin-bottom: 100px;
+        padding: 25px;
+        /*margin-top: 0;*/
+        /*margin-bottom: 100px;*/
     }
 }
